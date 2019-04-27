@@ -1,37 +1,25 @@
-
-exclude:
-  - "/vendor/"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "README.md"
-  - "LICENSE.md"
-  - "*.gemspec"
-
-keep_files:
-  - "CNAME"
-  - ".git"
-  - ".gitignore"
-
-
 # Site settings
-title: Airspace
-subtitle: "A free HTML5 agency template"
-url: "https://comh.cf/" # the base hostname & protocol for your site
-# baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
-baseurl: "/airspace-jekyll"
-cover: "/assets/cover.png"
-logo: "/assets/logo.png"
+# in the templates available like {{ site.myvariable }}.
+title: How Urban Disease Impact
+email: 503262997@qq.com
+brand: Yang Xihao
+headline: City, Disease and Future
+description: > # this means to ignore newlines until "baseurl:"
+  New Site
+baseurl: "" # the subpath of your site, e.g. /blog
+#url: "http://example.com" # the base hostname & protocol for your site
+copyright: 2019 Whatever Company, Inc. All Rights Reserved.
 
 # Build settings
 markdown: kramdown
 
-# Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+# Account ids
+snapwidget: 247552
 
-# Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+# Contacts
+email: 503262997@qq.com
+#phone: +1-800-555-2016
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+# Tracking
+#googleAnalitycsID: UA-83933844-1
+
