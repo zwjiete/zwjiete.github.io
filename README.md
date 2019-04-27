@@ -2,5 +2,5 @@
 
 使用了Jekyll 中的 [Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/) template by [Start Bootstrap](http://startbootstrap.com/).
 
-数据来源为：[国家统计局](data.stats.gov.cn) 
+数据来源为：[国家统计局](http://data.stats.gov.cn) 
 
