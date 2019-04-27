@@ -7,10 +7,10 @@ description: > # this means to ignore newlines until "baseurl:"
 #url: "github.io" # the base hostname & protocol for your site
 
 # User setting
-owner: 杨曦昊
+owner: 杨曦昊 张亚军 周钰坤
 
 email: 503262997@qq.com
-facebook_username: 杨曦昊 张亚军 周钰坤
+facebook_username: 杨曦昊
 #twitter_username:
 github_username: Xiaohuobanhahaha
 address:
@@ -19,10 +19,11 @@ address:
   # Feel free to add more lines here 
 telephone: 15308xxxx1249
 weixin: yangxih1
-copyright: 2019, Xiaohuobanhahaha Universal Company.Inc
+copyright: Xiaohuobanhahaha Universal Company.Inc
 
 # API settings
 #google_api_key:
+Baidu_api_key: zeCTLtL6V1rGxZU1MfZC5NyIsgAXmCvt
 
 # Build settings
 markdown: kramdown
