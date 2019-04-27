@@ -1,25 +1,26 @@
 # Site settings
-# in the templates available like {{ site.myvariable }}.
-title: How Urban Disease Impact
+title: How Urban Disease
 email: 503262997@qq.com
-brand: Yang Xihao
-headline: City, Disease and Future
 description: > # this means to ignore newlines until "baseurl:"
-  New Site
-baseurl: "" # the subpath of your site, e.g. /blog
-#url: "http://example.com" # the base hostname & protocol for your site
-copyright: 2019 Whatever Company, Inc. All Rights Reserved.
+  城市病成为现代不可忽略的问题
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+# User setting
+owner: Yangxihao
+email: 503262997@qq.com
+#facebook_username: 
+#twitter_username:
+github_username: Xiaohuobanhahaha
+#address:
+#  - line:
+#  - line:
+  # Feel free to add more lines here 
+#telephone:
+copyright: 2019,Xiaohuobanhahaha Company.Inc
+
+# API settings
+#google_api_key:
 
 # Build settings
 markdown: kramdown
-
-# Account ids
-snapwidget: 247552
-
-# Contacts
-email: 503262997@qq.com
-#phone: +1-800-555-2016
-
-# Tracking
-#googleAnalitycsID: UA-83933844-1
-
