@@ -3,21 +3,23 @@ title: How Urban Disease
 email: 503262997@qq.com
 description: > # this means to ignore newlines until "baseurl:"
   城市病成为现代不可忽略的问题
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+#baseurl: "Xiaohuobanhahaha.github.io" # the subpath of your site, e.g. /blog/
+#url: "github.io" # the base hostname & protocol for your site
 
 # User setting
-owner: Yangxihao
+owner: 杨曦昊
+
 email: 503262997@qq.com
-#facebook_username: 
+facebook_username: 杨曦昊 张亚军 周钰坤
 #twitter_username:
 github_username: Xiaohuobanhahaha
-#address:
-#  - line:
-#  - line:
+address:
+  - line: 云南财经大学
+  - line: 传媒学院
   # Feel free to add more lines here 
-#telephone:
-copyright: 2019,Xiaohuobanhahaha Company.Inc
+telephone: 15308xxxx1249
+weixin: yangxih1
+copyright: 2019, Xiaohuobanhahaha Universal Company.Inc
 
 # API settings
 #google_api_key:
