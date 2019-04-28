@@ -7,8 +7,20 @@
       <div class="col-lg-10 col-lg-offset-1 text-center">
 
       <!--  个人信息部分 -->
-        <h4><strong>{{ site.owner }}</strong>
+      <!--  个人信息部分 
+        <h4><strong>团队成员:{{ site.owner }}</strong>
+        </h4>-->
+        
+        <h4><strong>文字记者: 赵亚军 周钰坤</strong></h4>
+        <h4><strong>数据可视化: 杨曦昊</strong>
         </h4>
+        <h4><strong>网页制作: 杨曦昊</strong>
+        </h4>
+        <h4><strong>指导老师: 毕秋敏</strong>
+        </h4>
+        <h4><strong>数据来源: 国家统计局、中国气象局</strong>
+        </h4>
+        <h4><strong>学校地址</strong></h4>
         <p>
           {% for address in site.address %}
           {{ address.line }}<br>
@@ -24,9 +36,6 @@
         <ul class="list-inline">
           <li>
             <a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
           </li>
           <li>
             <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github fa-fw fa-3x"></i></a>

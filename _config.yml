@@ -7,7 +7,11 @@ description: > # this means to ignore newlines until "baseurl:"
 #url: "github.io" # the base hostname & protocol for your site
 
 # User setting
-owner: 杨曦昊 张亚军 周钰坤
+#owner: 杨曦昊 张亚军 周钰坤
+web_designer: 杨曦昊
+teacher: 毕秋敏
+data: 杨曦昊
+text: 张亚军 周钰坤
 
 email: 503262997@qq.com
 facebook_username: 杨曦昊
