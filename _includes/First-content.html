@@ -1,9 +1,9 @@
 
 
 <!--  最下方的内容  -->
-<section id="content" class="content">
+<section id="First-content" class="First-content">
   <div class="container-fluid">
-    <div class="text-center"><h2>了解一下城市病</h2></div>
+    <div class="text-center"><h2>初识城市病</h2></div>
     <div class="row">
       <div class="col-lg-18 col-lg-offset-2">
          <style type="text/css">
@@ -11,8 +11,8 @@
            background: #fff;
            border: solid 1px #ddd;
            box-shadow: 0 0 4px rgba(0,0,0,0);
-           font: 10px sans-serif;
-           height: 800px;
+           font: 8px sans-serif;
+           height: 960px;
            position: relative;
            width: 80%;
          }
@@ -35,10 +35,14 @@
            Bubble Menu
          </title>
         
-       <div id="mainBubble" style="height: 652px;"><svg class="mainBubbleSVG"     width="930.24" height="652"><text id="bubbleItemNote" x="10" y="450.12"    font-size="12" dominant-baseline="middle" alignment-baseline="middle"    style="fill: rgb(136, 136, 136);"></text></svg></div>
+       <div id="mainBubble" style="height: 960px;">
+        <svg class="mainBubbleSVG"  width="460" height="960">
+        <text id="bubbleItemNote" x="10" y="350" font-size="15" 
+        dominant-baseline="middle" alignment-baseline="middle"    
+        style="fill: rgb(136, 136, 136);"></text></svg></div>
        <script>
         var w = window.innerWidth*0.68*0.95;
-        var h = Math.ceil(w*0.7);
+        var h = Math.ceil(w*0.6);
         var oR = 0;
         var nTop = 0;
          
@@ -55,7 +59,7 @@
          .attr("id", "bubbleItemNote")
          .attr("x", 10)
          .attr("y", w/2-15)
-         .attr("font-size", 12)
+         .attr("font-size", 8)
          .attr("dominant-baseline", "middle")
          .attr("alignment-baseline", "middle")
          .style("fill", "#888888")
@@ -95,7 +99,7 @@
                  .attr("x", function(d, i) {return oR*(3*(1+i)-1);})
                  .attr("y", (h+oR)/3)
              .style("fill", function(d,i) { return colVals(i); }) // #1f77b4
-                 .attr("font-size", 30)
+                 .attr("font-size", 15)
                  .attr("text-anchor", "middle")
              .attr("dominant-baseline", "middle")
              .attr("alignment-baseline", "middle")
@@ -121,7 +125,8 @@
                      .style("opacity",0.5)
                      .style("fill", "#eee")
                      .on("click", function(d,i) {
-                     window.open(d.address);                 
+
+                     window.open(d.address,'_self');                 
                    })
                  .on("mouseover", function(d,i) {
                    //window.alert("say something");
@@ -143,13 +148,13 @@
                      .style("opacity",0.5)
                      .attr("text-anchor", "middle")
                  .style("fill", function(d,i) { return colVals(iB); }) //     #1f77b4
-                     .attr("font-size", 6)
+                     .attr("font-size", 10)
                      .attr("cursor","pointer")
                      .attr("dominant-baseline", "middle")
                  .attr("alignment-baseline", "middle")
                      .text(function(d) {return d.name})      
                      .on("click", function(d,i) {
-                     window.open(d.address);
+                     window.open(d.address,'_self');
                      }); 
       
              }
@@ -169,7 +174,7 @@
            svg.attr("width", w);
            svg.attr("height",h);       
             
-           d3.select("#bubbleItemNote").text("数据来源：国家统计局"   );
+           d3.select("#bubbleItemNote").text();
             
            var t = svg.transition()
                .duration(650);
@@ -180,7 +185,7 @@
                  .attr("cy", (h+oR)/3);
       
              t.selectAll(".topBubbleText")
-             .attr("font-size", 30)
+             .attr("font-size", 15)
                  .attr("x", function(d, i) {return oR*(3*(1+i)-1);})
                  .attr("y", (h+oR)/3);
           
@@ -189,7 +194,7 @@
              t.selectAll(".childBubbleText" + k)
                      .attr("x", function(d,i) {return (oR*(3*(k+1)-1) + oR*1.5*     Math.cos((i-1)*45/180*3.1415926));})
                      .attr("y", function(d,i) {return ((h+oR)/3 +        oR*1.5     *Math.sin((i-1)*45/180*3.1415926));})
-                 .attr("font-size", 6)
+                 .attr("font-size", 8)
                      .style("opacity",0.5);
       
              t.selectAll(".childBubble" + k)
@@ -205,7 +210,7 @@
              function activateBubble(d,i) {
                  // increase this bubble and decrease others
                  var t = svg.transition()
-                     .duration(d3.event.altKey ? 7500 : 350);
+                     .duration(d3.event.altKey ? 8000 : 350);
           
                  t.selectAll(".topBubble")
                      .attr("cx", function(d,ii){
@@ -248,9 +253,9 @@
                      })          
                      .attr("font-size", function(d,ii){
                          if(i == ii)
-                             return 30*1.5;
+                             return 15*1.5;
                          else
-                             return 30*0.6;              
+                             return 15*0.6;              
                      });
           
                  var signSide = -1;
