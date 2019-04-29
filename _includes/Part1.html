@@ -1,13 +1,46 @@
-<section id="Second-content" class="Second-content">
-  <div class="container-fluid">
-    <div class="text-center"><h2>2008-2017年四城相关指标情况</h2></div>
-    <div class="row">
-      <div class="col-lg-18 col-lg-offset-2">
-      <div id="echarts_eg_2" style="width: 960px;height:500px;"></div>
-        <script type="text/javascript">
-          var myChart = echarts.init(document.getElementById('echarts_eg_2'));
+<section id='part1-title' class="bg-primary">
+	<div class="container-fluid">
+    <div class="row text-center"> <h1>自然资源</h1>
+    	<br></br>
+      <div class="col-lg-12">
+      	<div class="col-lg-2 column">
+		</div>
+		<div class="col-lg-8 column">
+			<p class="lead">
+				 <strong><em>中国陆地面积</em></strong> 960万平方公里,占亚洲大陆土地面积的22.1%，占全世界陆地面积的 6.4%，是世界上国土面积广阔的国家之一，位居世界第三。
+				 <br></br>
+				 <strong>中国</strong>丰富的土地资源具有两个显著的地理特色：一、海拔较高、起伏较大的山地（包括丘陵、山地和高原）所占的面积超过平地（平原和高平原），成2/3与1/3之比；二、在复杂多样的生态环境中，形成草原多、耕地少、林地比例小、难利用土地比例大的特点。2018年，草原约占全国土地总面积的37.4%，耕地占10.4%，林地约占12.7%，而沙漠、戈壁、高寒荒漠、石山、冰川和永久积雪等难以利用的土地则合计约占20.5%。尽管如此，中国土地资源进一步充分合理利用的潜力仍很大，除现有草地、耕地和林地外，估计全国还有约3300万公顷的宜农荒地、6000多万公顷的草山草坡和9000多万公顷的宜林荒山、荒地和疏林地有待开发利用（见中国土地资源）。
 
-          var dataBJ = [
+			</p>
+		</div>
+		<div class="col-lg-2 column">
+		</div>
+    	</div>
+	</div>
+	</div>
+</section>
+
+<br></br>
+<section id="part1-content1" >
+  <div class="container-fluid">
+  	<div class="text-center"><h3>土地占有是什么情况呀</h3></div>
+  	<div class="col-lg-12 text-center">
+    	<div class="col-lg-2 column"></div>
+		<div class="col-lg-8 column"><p class="lead"><strong><em>土地占有</em></strong> 是对土地的实际控制，由于土地所有权与使用权的分离，土地所有人不一定就是土地占有人，中国多数情况下，土地是由非所有人占有和使用的。</p>
+		</div>
+		<div class="col-lg-2 column"></div>
+		</div>
+    <div class="text-center"><h4>2008-2017年四城相关指标情况</h4></div>
+    <div class="row">
+      	<div class="col-lg-18 col-lg-offset-2">
+      	<script src="js/echarts.js"></script>
+      	<div id="part1-content1_graph1" style="width: 960px;height:500px;"></div>
+      	<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('part1-content1_graph1'));
+
+        // 指定图表的配置项和数据
+        var dataBJ = [
           [1,55,9,56,0.46,18,6,"良"],
           [2,25,11,21,0.65,34,9,"优"],
           [3,56,7,63,0.3,14,5,"良"],
@@ -228,9 +261,83 @@
                 }
             ]
           };
-                      // 使用刚指定的配置项和数据显示图表。
-          myChart.setOption(option);
-        </script>
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    	</script>
+     	</div>
+    </div>
+  </div>
+</section>
+
+<br></br>
+<section id="part1-content2" >
+  <div class="container-fluid">
+    <div class="text-center"><h4>水资源的表格呀</h4></div>
+    <div class="row">
+      	<div class="col-lg-18 col-lg-offset-2">
+      	<script src="js/echarts.js"></script>
+      	<div id="part1-content2_graph1" style="width: 960px;height:500px;"></div>
+      	<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('part1-content2_graph1'));
+
+        // 指定图表的配置项和数据
+        
+		option = {
+		    title: {
+		        text: 'Step Line'
+		    },
+		    tooltip: {
+		        trigger: 'axis'
+		    },
+		    legend: {
+		        data:['Step Start', 'Step Middle', 'Step End']
+		    },
+		    grid: {
+		        left: '3%',
+		        right: '4%',
+		        bottom: '3%',
+		        containLabel: true
+		    },
+		    toolbox: {
+		        feature: {
+		            saveAsImage: {}
+		        }
+		    },
+		    xAxis: {
+		        type: 'category',
+		        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+		    },
+		    yAxis: {
+		        type: 'value'
+		    },
+		    series: [
+		        {
+		            name:'Step Start',
+		            type:'line',
+		            step: 'start',
+		            data:[120, 132, 101, 134, 90, 230, 210]
+		        },
+		        {
+		            name:'Step Middle',
+		            type:'line',
+		            step: 'middle',
+		            data:[220, 282, 201, 234, 290, 430, 410]
+		        },
+		        {
+		            name:'Step End',
+		            type:'line',
+		            step: 'end',
+		            data:[450, 432, 401, 454, 590, 530, 510]
+		        }
+		    ]
+		};
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
       </div>
     </div>
   </div>
