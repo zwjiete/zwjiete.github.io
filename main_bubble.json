@@ -1,9 +1,10 @@
 {"name":"bubble", "children": [
-{"name":"自然资源短缺","address":"#part1-title",
+{"name":"公共资源紧张","address":"#part1-title",
 "children":[
     {"name": "土地占有","address":"#part1-content1", "note":"城市人口密度"},
     {"name": "水资源","address":"#part1-content2","note":"北京人均水资源"},
-    {"name": "能源消耗","address":"#part1-content3","note":"主要能源日均消费量 电力消耗情况 比其他城市 "}
+    {"name":"教育资源","address":"#part1-content3","note":"师生比北京比较 小学，中学"},
+    {"name":"交通拥堵","address":"#part1-content4","note":"其他媒体 北京交通情况，北京地铁图，死亡率"}
 ]},
 {"name": "生态环境污染", "address":"#part2-title",
 "children":[
@@ -11,16 +12,10 @@
     {"name":"垃圾排放","address":"#part2-content2","note":"生活垃圾"},
     {"name":"噪声污染","address":"#part2-content3","note":"国家数据网，声音级，投资"}
 ]},
-{"name":"公共资源紧张", "address":"#part3-title",
+{"name":"居民生活困难", "address":"#part3-title",
 "children":[
-    {"name":"教育资源","address":"#part3-content4","note":"师生比北京比较 小学，中学"},
-    {"name":"医疗资源","address":"#part3-content2","note":"床位、医生数"},
-    {"name":"交通拥堵","address":"#part3-content3","note":"其他媒体 北京交通情况，北京地铁图，死亡率"}
-]},
-{"name":"居民生活困难", "address":"#part4-title",
-"children":[
-    {"name":"就业困难","address":"#part4-content1","note":"失业率"},
-    {"name":"抚养负担","address":"#part4-content2","note":"少年儿童抚养比 老年儿童抚养比 总抚养比"},
-    {"name":"关系疏离","address":"#part4-content3","note":"粗离婚率,刑事案件"}
+    {"name":"就业困难","address":"#part3-content1","note":"失业率"},
+    {"name":"抚养负担","address":"#part3-content2","note":"少年儿童抚养比 老年儿童抚养比 总抚养比"},
+    {"name":"关系疏离","address":"#part3-content3","note":"粗离婚率,刑事案件"}
 ]}
 ]}

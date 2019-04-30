@@ -12,7 +12,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <title>城市病数据新闻报道</title>
 
@@ -56,16 +57,13 @@
       <a href="#about" onclick = $("#menu-close").click(); >About</a>
     </li>
     <li>
-      <a href="#part1-title" onclick = $("#menu-close").click(); >自然资源</a>
+      <a href="#part1-title" onclick = $("#menu-close").click(); >公共资源</a>
     </li>
     <li>
       <a href="#part2-title" onclick = $("#menu-close").click(); >环境污染</a>
     </li>
     <li>
-      <a href="#part3-title" onclick = $("#menu-close").click(); >公共资源</a>
-    </li>
-    <li>
-      <a href="#part4-title" onclick = $("#menu-close").click(); >居民生活</a>
+      <a href="#part3-title" onclick = $("#menu-close").click(); >居民生活</a>
     </li>
     <li>
       <a href="#footer" onclick = $("#menu-close").click(); >Contact</a>
@@ -87,11 +85,11 @@
 
 <!--  第一部分介绍 -->
 <section id="about" class="about">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2>Hello World！ This is Ubran Disease!</h2>
-        <p class="lead">所有图片据来自互联网，好看的来自这里<a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+        <p class="lead">加一些新闻由头哟！！！可以放一张图片</p>
       </div>
     </div>
     <!-- /.row -->
@@ -135,7 +133,7 @@
         
         <div id="mainBubble" style="height: 100%; width: 100%">
         <svg class="mainBubbleSVG"  width="80%" height="100%">
-        <text id="bubbleItemNote" x="26%" y="85%" font-size="15" 
+        <text id="bubbleItemNote" x="26%" y="90%" font-size="15" 
         dominant-baseline="middle" alignment-baseline="middle"    
         style="fill: rgb(136, 136, 136);"></text></svg></div>
         <script>
@@ -277,9 +275,9 @@
                .duration(650);
               
             t.selectAll(".topBubble")
-                 .attr("r", function(d) { return oR; })
-                 .attr("cx", function(d, i) {return oR*(3*(1+i)-1);})
-                 .attr("cy", (h+oR)/3);
+                .attr("r", function(d) { return oR; })
+                .attr("cx", function(d, i) {return oR*(3*(1+i)-1);})
+                .attr("cy", (h+oR)/3);
       
             t.selectAll(".topBubbleText")
             .attr("font-size", 20)
@@ -295,10 +293,10 @@
                      .style("opacity",0.5);
       
              t.selectAll(".childBubble" + k)
-                     .attr("r",  function(d) {return oR/3.0;})
-                 .style("opacity",0.5)
-                     .attr("cx", function(d,i) {return (oR*(3*(k+1)-1) + oR*1.5*Math.cos((i-1)*45/180*3.1415926));})
-                     .attr("cy", function(d,i) {return ((h+oR)/3 + oR* 1.5*Math.sin((i-1)*45/180*3.1415926));});}}
+                .attr("r",  function(d) {return oR/3.0;})
+                .style("opacity",0.5)
+                .attr("cx", function(d,i) {return (oR*(3*(k+1)-1) + oR*1.5*Math.cos((i-1)*45/180*3.1415926));})
+                .attr("cy", function(d,i) {return ((h+oR)/3 + oR* 1.5*Math.sin((i-1)*45/180*3.1415926));});}}
               
               
              function activateBubble(d,i) {
@@ -414,19 +412,17 @@
         <i class="fa fa-circle fa-stack-2x"></i>
         <i class="fa fa-tree fa-stack-1x text-primary"></i>
         </span>
-        <h2><strong>自然资源</strong></h2>
+        <h2><strong>公共资源紧张</strong></h2>
         </div>
-    	<div class="col-lg-12">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-			<p class="lead">
-		    <strong><em>中国陆地面积</em></strong> 960万平方公里,占亚洲大陆土地面积的22.1%,占全世界陆地面积的 6.4%,是世界上国土面积广阔的国家之一,位居世界第三。
-			<br></br>
-			<strong>中国</strong>丰富的土地资源具有两个显著的地理特色：一、海拔较高、起伏较大的山地（包括丘陵、山地和高原）所占的面积超过平地（平原和高平原）,成2/3与1/3之比；二、在复杂多样的生态环境中,形成草原多、耕地少、林地比例小、难利用土地比例大的特点。2018年,草原约占全国土地总面积的37.4%,耕地占10.4%,林地约占12.7%,而沙漠、戈壁、高寒荒漠、石山、冰川和永久积雪等难以利用的土地则合计约占20.5%。尽管如此,中国土地资源进一步充分合理利用的潜力仍很大,除现有草地、耕地和林地外,估计全国还有约3300万公顷的宜农荒地、6000多万公顷的草山草坡和9000多万公顷的宜林荒山、荒地和疏林地有待开发利用（见中国土地资源）。
-			</p>
-            </div>
-    	</div>
-	    </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+			  <p class="lead"><strong><em>中国陆地面积</em></strong> 960万平方公里,占亚洲大陆土地面积的22.1%,占全世界陆地面积的 6.4%,是世界上国土面积广阔的国家之一,位居世界第三。
+			  <br></br>
+			  <strong>中国</strong>丰富的土地资源具有两个显著的地理特色：一、海拔较高、起伏较大的山地（包括丘陵、山地和高原）所占的面积超过平地（平原和高平原）,成2/3与1/3之比；二、在复杂多样的生态环境中,形成草原多、耕地少、林地比例小、难利用土地比例大的特点。2018年,草原约占全国土地总面积的37.4%,耕地占10.4%,林地约占12.7%,而沙漠、戈壁、高寒荒漠、石山、冰川和永久积雪等难以利用的土地则合计约占20.5%。尽管如此,中国土地资源进一步充分合理利用的潜力仍很大,除现有草地、耕地和林地外,估计全国还有约3300万公顷的宜农荒地、6000多万公顷的草山草坡和9000多万公顷的宜林荒山、荒地和疏林地有待开发利用（见中国土地资源）。</p>
+      </div>
+    </div>
 	</div>
 </section>
 
@@ -434,16 +430,16 @@
 <section id="part1-content1" >
   <div class="container-fluid">
   	<div class="text-center"><h3>土地占有是什么情况呀</h3></div>
-  	<div class="col-lg-12 text-center">
+  	<div class="col-lg-12">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
-    	<p class="lead"><strong><em>土地占有</em></strong> 是对土地的实际控制,由于土地所有权与使用权的分离,土地所有人不一定就是土地占有人,中国多数情况下,土地是由非所有人占有和使用的。</p>
+    	  <p class="lead"><strong><em>土地占有</em></strong> 是对土地的实际控制,由于土地所有权与使用权的分离,土地所有人不一定就是土地占有人,中国多数情况下,土地是由非所有人占有和使用的。</p>
 		</div>
-	<br></br>
-	<br></br>
+    </div>
+	  <br></br>
     <div class="text-center"><h4>2008-2017年四城相关指标情况</h4>
-    	<h5>城市人口密度(人/平方公里)</h5></div>
-    <div class="row">
+    	  <h5>城市人口密度(人/平方公里)</h5></div>
+        <div class="row">
       	<div class="col-lg-12">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
@@ -523,7 +519,7 @@
   	<div class="col-lg-12">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
-		<p class="lead"><strong><em>根据</em></strong> 根据世界气象组织（WMO）和联合国教科文组织（UNESCO）的《INTERNATIONAL GLOSSARY OF HYDROLOGY》（国际水文学名词术语,第三版,2012年）中有关水资源的定义,水资源是指可资利用或有可能被利用的水源,这个水源应具有足够的数量和合适的质量,并满足某一地方在一段时间内具体利用的需求。根据全国科学技术名词审定委员会公布的水利科技名词（科学出版社,1997）中有关水资源的定义,水资源是指地球上具有一定数量和可用质量能从自然界获得补充并可资利用的水。</p>
+		    <p class="lead"><strong><em>根据</em></strong> 根据世界气象组织（WMO）和联合国教科文组织（UNESCO）的《INTERNATIONAL GLOSSARY OF HYDROLOGY》（国际水文学名词术语,第三版,2012年）中有关水资源的定义,水资源是指可资利用或有可能被利用的水源,这个水源应具有足够的数量和合适的质量,并满足某一地方在一段时间内具体利用的需求。根据全国科学技术名词审定委员会公布的水利科技名词（科学出版社,1997）中有关水资源的定义,水资源是指地球上具有一定数量和可用质量能从自然界获得补充并可资利用的水。</p>
 		</div>
     </div>
 	<br></br>
@@ -634,347 +630,20 @@
 </section>
 
 <br></br>
-<section id="part1-content3" >
-  <div class="container-fluid">
-  	<div class="text-center"><h3>来啊造作呀</h3></div>
-  	<div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-        <p class="lead"><strong><em>能源消耗</em></strong> 能源消耗是能源消费的别称,能源消耗是指生产和生活所消耗的能源。能源消耗按人平均的占有量是衡量一个国家经济发展和人民生活水平的重要标志。人均能耗越多,国民生产总值就越大,社会也就越富裕。在发达国家里,能源消耗强度变化与工业化进程密切相关。随着经济的增长,工业化阶段初期和中期能源消耗一般呈缓慢上升趋势,当经济发展进入后工业化阶段后,经济增长方式发生重大改变,能源消费强度开始下降。</p>
-		</div>
-    </div>
-    <div class="text-center"><h4>早做表格</h4></div>
-    <div class="row">
-      	<div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-      	<script src="js/echarts.js"></script>
-      	<div id="part1-content3_graph1" style="width: 80%px;height:500px;"></div>
-      	<script type="text/javascript">
-        // 基于准备好的dom,初始化echarts实例
-        var myChart = echarts.init(document.getElementById('part1-content3_graph1'));
-
-        // 指定图表的配置项和数据
-        
-		option = {
-		    title: {
-		        text: 'Step Line'
-		    },
-		    tooltip: {
-		        trigger: 'axis'
-		    },
-		    legend: {
-		        data:['Step Start', 'Step Middle', 'Step End']
-		    },
-		    grid: {
-		        left: '3%',
-		        right: '4%',
-		        bottom: '3%',
-		        containLabel: true
-		    },
-		    toolbox: {
-		        feature: {
-		            saveAsImage: {}
-		        }
-		    },
-		    xAxis: {
-		        type: 'category',
-		        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-		    },
-		    yAxis: {
-		        type: 'value'
-		    },
-		    series: [
-		        {
-		            name:'Step Start',
-		            type:'line',
-		            step: 'start',
-		            data:[120, 132, 101, 134, 90, 230, 210]
-		        },
-		        {
-		            name:'Step Middle',
-		            type:'line',
-		            step: 'middle',
-		            data:[220, 282, 201, 234, 290, 430, 410]
-		        },
-		        {
-		            name:'Step End',
-		            type:'line',
-		            step: 'end',
-		            data:[450, 432, 401, 454, 590, 530, 510]
-		        }
-		    ]
-		};
-
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-        </script>
-        </div>
-        </div>
-    </div>
-</section>  
-  <br></br>
-<section id='part2-title' class="bg-primary">
-	<div class="container-fluid">
-    <div class="row text-center"> 
-    	<br></br>
-    	<div class="service-item">
-        <span class="fa-stack fa-5x">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-trash fa-stack-1x text-primary"></i>
-        </span>
-        <h2><strong>环境污染</strong></h2>
-        </div>
-      	<div class="col-lg-12">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-			<p class="lead">
-			<strong><em>由于</em></strong> 
-			人们对工业高度发达的负面影响预料不够，预防不利，导致了全球性的三大危机：资源短缺、环境污染、生态破坏。环境污染指自然的或人为的破坏，向环境中添加某种物质而超过环境的自净能力而产生危害的行为。（或由于人为的因素，环境受到有害物质的污染，使生物的生长繁殖和人类的正常生活受到有害影响。）由于人为因素使环境的构成或状态发生变化，环境素质下降，从而扰乱和破坏了生态系统和人类的正常生产和生活条件的现象。
-
-			<br></br>
-			<strong>针对</strong>环境污染刑事案件办理中的取证难、鉴定难、认定难等问题，最高人民法院、最高人民检察院发布司法解释《关于办理环境污染刑事案件适用法律若干问题的解释》，对有关环境污染犯罪的定罪量刑标准作出了新的规定，以从严惩治和防范环境污染。根据《解释》，致使一人以上重伤或者三人以上轻伤即构成“严重污染环境”，将被以污染环境罪追究刑事责任。
-			</p>
-    	    </div>
-	        </div>
-	    </div>
-    </div>
-    </div>
-</section>
-
-<br></br>
-<section id='part2-content1'>
+<section id='part1-content3'>
     <div class="container-fluid">
-    <div class="text-center"><h2>2013-2019年城市月度空气质量情况</h2></div>
+    <div class="text-center"><h3>教育资源怎么了</h3></div>
     <div class="row">
         <div class="col-lg-12">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
+        <p class="lead"><strong><em>根据</em></strong> 根据世界气象组织（WMO）和联合国教科文组织（UNESCO）的《INTERNATIONAL GLOSSARY OF HYDROLOGY》（国际水文学名词术语,第三版,2012年）中有关水资源的定义,水资源是指可资利用或有可能被利用的水源,这个水源应具有足够的数量和合适的质量,并满足某一地方在一段时间内具体利用的需求。根据全国科学技术名词审定委员会公布的水利科技名词（科学出版社,1997）中有关水资源的定义,水资源是指地球上具有一定数量和可用质量能从自然界获得补充并可资利用的水。</p>
+        <div class="text-center"><h4>2017师生比</h4><h5>教师数=1</h5></div>
         <script src="js/echarts.js"></script>
-        <div id="part2-content1_graph1" style="width: 80%px;height:500px;"></div>
+        <div id="part1-content3_graph1" style="width: 80%px;height:500px;"></div>
         <script type="text/javascript">
             // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('part2-content1_graph1'));
-    
-            // 指定图表的配置项和数据
-            
-        option = {
-            tooltip : {
-                trigger: 'axis',
-                axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-                    type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-                }
-            },
-            legend: {
-                data: ['优', '良','轻度污染','中度污染','重度污染'],
-                left: 'right',
-                top: 35
-            },
-            grid: {
-                left: '3%',
-                right: '4%',
-                bottom: '3%',
-                top: '15%',
-                containLabel: true
-            },
-            xAxis:  {
-                type: 'value'
-            },
-            yAxis: {
-                type: 'category',
-                data: ['北京','上海','深圳','广州','重庆','天津','苏州','武汉',
-                '成都','杭州']
-            },
-            series: [
-                {
-                    name: '优',
-                    type: 'bar',
-                    stack: '总量',
-                    label: {
-                        normal: {
-                            show: false,
-                            position: 'insideRight'
-                        }
-                    },
-                    data: [0, 0, 23, 3, 0,0,0,0,0,0]
-                },
-                {
-                    name: '良',
-                    type: 'bar',
-                    stack: '总量',
-                    label: {
-                        normal: {
-                            show: false,
-                            position: 'insideRight'
-                        }
-                    },
-                    data: [25, 59, 44, 60, 53, 29, 53,40, 43, 57]
-                },
-                {
-                    name: '轻度污染',
-                    type: 'bar',
-                    stack: '总量',
-                    label: {
-                        normal: {
-                            show: false,
-                            position: 'insideRight'
-                        }
-                    },
-                    data: [35, 5, 1, 2, 10, 33, 11,22, 17, 7]
-                },
-                {
-                    name: '中度污染',
-                    type: 'bar',
-                    stack: '总量',
-                    label: {
-                        normal: {
-                            show: false,
-                            position: 'insideRight'
-                        }
-                    },
-                    data: [5, 1, 0, 0, 2, 3, 1,1, 4, 1]
-                },
-                {
-                    name: '重度污染',
-                    type: 'bar',
-                    stack: '总量',
-                    label: {
-                        normal: {
-                            show: false,
-                            position: 'insideRight'
-                        }
-                    },
-                    data: [0, 0, 0, 0, 0, 0,0, 2, 1, 0]
-                }
-            ]
-        };
-            // 使用刚指定的配置项和数据显示图表。
-            myChart.setOption(option);
-        </script>
-  	    </div>
-	    </div>
-	</div>
-</section> 
-
-<br></br>
-<section id='part2-content1'>
-    <div class="container-fluid">
-    <div class="text-center"><h2>2011-2017年城市粉尘排放情况情况</h2>
-        <h4>烟(粉)尘排放量(吨)</h4></div>
-    <div class="row">
-        <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-        <script src="js/echarts.js"></script>
-        <div id="part2-content1_graph2" style="width: 80%px;height:500px;"></div>
-        <script type="text/javascript">
-            // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('part2-content1_graph2'));
-    
-            // 指定图表的配置项和数据
-            
-                option = {
-                tooltip : {
-                    trigger: 'axis',
-                    axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-                        type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-                    }
-                },
-                legend: {
-                    data:['北京','上海','重庆','天津','全国平均']
-                },
-                grid: {
-                    left: '3%',
-                    right: '4%',
-                    bottom: '3%',
-                    containLabel: true
-                },
-                xAxis : [
-                    {
-                        type : 'category',
-                        data : ['2011','2012','2013','2014','2015','2016','2017']
-                    }
-                ],
-                yAxis : [
-                    {
-                        type : 'value'
-                    }
-                ],
-                series : [
-                    {
-                        name:'北京',
-                        type:'bar',
-                        data:[65848.04,66824.78,59285.95,57372.45,49386.55,34535.35,20423.74,]
-                    },
-                    {
-                        name:'上海',
-                        type:'bar',
-                        data:[89828.4,87148.42,80924.98,141650.1,120668.29,79455.41,47032.25,]
-                    },
-                    {
-                        name:'重庆',
-                        type:'bar',
-                        data:[180971.76,182265.7,191204.48,226130.56,209078.14,95799.42,83302.84,]
-                    },
-                    {
-                        name:'天津',
-                        type:'bar',
-                        data:[75922.53,84064,87456.88,139511.47,100685.72,78144.13,65191.22,]
-                    },
-                    {
-                        name:'全国平均',
-                        type:'bar',
-                        data:[19464.62005,18809.35737,19454.20207,26495.44533,23409.63881,15382.99391,12119.69962,]   
-                    }
-                ]
-            };
-            // 使用刚指定的配置项和数据显示图表。
-            myChart.setOption(option);
-        </script>
-        </div>
-        </div>
-    </div>
-    </div>
-</section> 
-  <br></br>
-<section id='part3-title' class="bg-primary">
-	<div class="container-fluid">
-    <div class="row text-center"> 
-    	<br></br>
-    	<div class="service-item">
-        <span class="fa-stack fa-5x">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-hospital-o fa-stack-1x text-primary"></i>
-        </span>
-        <h2><strong>公共资源</strong></h2>
-        </div>
-      	<div class="col-lg-12">
-      		<div class="col-lg-2"></div>
-    		<div class="col-lg-8">
-			<p class="lead">
-			<strong><em>公共资源</em></strong> 
-			（common resource）是指自然生成或自然存在的资源，它能为人类提供生存、发展、享受的自然物质与自然条件，这些资源的所有权由全体社会成员共同享有，是人类社会经济发展共同所有的基础条件。
-			</p>
-    		</div>
-		</div>
-	</div>
-	</div>
-</section>
-
-<br></br>
-<section id='part3-content1'>
-    <div class="container-fluid">
-    <div class="text-center"><h2>2017年基础教育师生比</h2></div>
-    <div class="row">
-        <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-        <script src="js/echarts.js"></script>
-        <div id="part3-content1_graph1" style="width: 80%px;height:500px;"></div>
-        <script type="text/javascript">
-            // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('part3-content1_graph1'));
+            var myChart = echarts.init(document.getElementById('part1-content3_graph1'));
             option = {
                 legend: {},
                 tooltip: {},
@@ -1008,114 +677,25 @@
 </section> 
 
 <br></br>
-<section id='part3-content2'>
+<section id='part1-content4'>
     <div class="container-fluid">
-    <div class="text-center"><h2>医疗床位呀</h2></div>
+    <div class="text-center"><h2>交通资源好紧张哟</h2></div>
     <div class="row">
         <div class="col-lg-12">
         <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-        <script src="js/echarts.js"></script>
-        <div id="part3-content2_graph1" style="width: 80%px;height:500px;"></div>
-        <script type="text/javascript">
-            // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('part3-content2_graph1'));
-            option = {
-            
-            tooltip: {
-                trigger: 'axis'
-            },
-            legend: {
-                data:['北京','上海','全国']
-            },
-            grid: {
-                left: '5%',
-                right: '5%',
-                bottom: '3%',
-                containLabel: true
-            },
-            xAxis: {
-                type: 'category',
-                boundaryGap: false,
-                data: ['2011','2012','2013','2014','2015','2016','2017']
-            },
-            yAxis: {
-                type: 'value'
-            },
-            series: [
-                {
-                    name:'北京',
-                    type:'line',
-                    stack:'堆叠',
-                    areaStyle: {},
-                    data:[76.23,79.41,81.45,84.59,84.31,86.36,86.58]
-                },
-                {
-                    name:'上海',
-                    type:'line',
-                    stack:'堆叠',
-                    areaStyle: {},
-                    data:[76.78,78.56,81.45,83.4,86.82,91.09,94.58]
-                },
-                {
-                    name:'全国',
-                    type:'line',
-                    stack:'堆叠',
-                    areaStyle: {},
-                    data:[62.4,68.8,73.6,78.37,82.7,84.13,87.54,]
-                }
-            ]
-            };
-            // 指定图表的配置项和数据
-            
-        
-            // 使用刚指定的配置项和数据显示图表。
-            myChart.setOption(option);
-        </script>
-        </div>
-        </div>
-    </div>
-</section> 
-  <br></br>
-<section id='part4-title' class="bg-primary">
-	<div class="container-fluid">
-    <div class="row text-center"> 
-    	<br></br>
-    	<div class="service-item">
-        <span class="fa-stack fa-5x">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-male fa-stack-1x text-primary"></i>
-        </span>
-        <h2><strong>居民生活</strong></h2>
-        </div>
-      	<div class="col-lg-12">
-      		<div class="col-lg-2"></div>
-    		<div class="col-lg-8">
-			<p class="lead">
-			<strong><em>居民生活水平</em></strong> 
-			是指在某一社会生产发展阶段中，居民用以满足物质、文化生活需要的社会产品和劳务的消费程度。
-			</p>
-    	</div>
-		</div>
-	</div>
-	</div>
-</section>
-
-<section id='part4-content1'>
-    <div class="container-fluid">
-    <div class="text-center"><h2>来地图走起</h2></div>
-    <div class="row">
-        <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
+        <div class="col-lg-8"> 
+        <p class="lead">
+        <strong><em>有轨电车</em></strong> 开通以后，城区公共交通更加便利了，但我区石湖荡镇、新浜镇、泖港镇、叶榭镇等偏远乡镇的公共交通还是十分不便。”区政协委员朱利明建议，应以此次有轨电车开通运行为契机，重新规划我区公共交通线路，最大限度地利用目前的公共交通资源，为我区市民出行提供便利，特别是进一步改善农村的交通，为农村发展提供有力保障。
+        <br></br>
+        <strong>“例如</strong>从新浜到城区的公交线路只有松江35路一条，且发车间隔时间长，末班车时间早，当地居民出行相当不便利。”朱利明认为，乡村要振兴，乡村通往城市的公共交通能力必须提升。朱利明建议以轨道交通9号线为第一层面，有轨电车为第二层面，公交车辆为第三层面构筑起松江全方位、立体化的公共交通体系。
+        </p>
         </div>
         </div>
     </div>
 </section> 
 
-<br></br>
-<section id='part4-content1-eg' style="height: 60%; width: 80%; margin: 0;padding-left: 20%">
-    <div id="part4-content1-graph1" style="height: 100%;"></div>
+<section id='part1-content4-eg' style="height: 60%; width: 80%; margin: 0;padding-left: 20%">
+    <div id="part1-content4-graph1" style="height: 100%;"></div>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/echarts-all-3.js"></script>
     <script type="text/javascript" src="js/dataTool.min.js"></script>
@@ -1124,7 +704,7 @@
     <script type="text/javascript" src="js/bmap.min.js"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=zeCTLtL6V1rGxZU1MfZC5NyIsgAXmCvt"></script>
     <script type="text/javascript">
-    var dom = document.getElementById("part4-content1-graph1");
+    var dom = document.getElementById("part1-content4-graph1");
     var myChart = echarts.init(dom);
     var app = {};
     option = null;
@@ -1159,7 +739,7 @@
         myChart.setOption(option = {
         bmap: {
             center: [116.41, 39.92],
-            zoom: 11,
+            zoom: 10,
             roam: true,
             mapStyle: {
               'styleJson': [
@@ -1326,6 +906,860 @@
         }
     </script>
 </section>
+  
+  <br></br>
+<section id='part2-title' class="bg-primary">
+	<div class="container-fluid">
+    <div class="row text-center"> 
+    	<br></br>
+    	<div class="service-item">
+        <span class="fa-stack fa-5x">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-trash fa-stack-1x text-primary"></i>
+        </span>
+        <h2><strong>环境污染</strong></h2>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+		<p class="lead">
+		<strong><em>由于</em></strong> 
+		人们对工业高度发达的负面影响预料不够，预防不利，导致了全球性的三大危机：资源短缺、环境污染、生态破坏。环境污染指自然的或人为的破坏，向环境中添加某种物质而超过环境的自净能力而产生危害的行为。（或由于人为的因素，环境受到有害物质的污染，使生物的生长繁殖和人类的正常生活受到有害影响。）由于人为因素使环境的构成或状态发生变化，环境素质下降，从而扰乱和破坏了生态系统和人类的正常生产和生活条件的现象。
+		<br></br>
+		<strong>针对</strong>环境污染刑事案件办理中的取证难、鉴定难、认定难等问题，最高人民法院、最高人民检察院发布司法解释《关于办理环境污染刑事案件适用法律若干问题的解释》，对有关环境污染犯罪的定罪量刑标准作出了新的规定，以从严惩治和防范环境污染。根据《解释》，致使一人以上重伤或者三人以上轻伤即构成“严重污染环境”，将被以污染环境罪追究刑事责任。
+		</p>
+    	</div>
+	</div>
+    </div>
+    </div>
+</section>
+
+<br></br>
+<section id='part2-content1'>
+    <div class="container-fluid">
+    <div class="text-center"><h3>空气污染</h3></div>
+    <div class="col-lg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p>
+        </div>
+    </div>
+    <div class="text-center"><h4>2013-2019年城市月度空气质量情况</h4><h5>AQI指标</h5></div>
+    <div class="row">
+        <div class="col-lg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+        <script src="js/echarts.js"></script>
+        <div id="part2-content1_graph1" style="width: 80%px;height:500px;"></div>
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('part2-content1_graph1'));
+    
+            // 指定图表的配置项和数据
+            
+        option = {
+            tooltip : {
+                trigger: 'axis',
+                axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                    type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            legend: {
+                data: ['优', '良','轻度污染','中度污染','重度污染']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                top: '10%',
+                containLabel: true
+            },
+            xAxis:  {
+                type: 'value'
+            },
+            yAxis: {
+                type: 'category',
+                data: ['北京','上海','深圳','广州','重庆','天津','苏州','武汉',
+                '成都','杭州']
+            },
+            series: [
+                {
+                    name: '优',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [0, 0, 23, 3, 0,0,0,0,0,0]
+                },
+                {
+                    name: '良',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [25, 59, 44, 60, 53, 29, 53,40, 43, 57]
+                },
+                {
+                    name: '轻度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [35, 5, 1, 2, 10, 33, 11,22, 17, 7]
+                },
+                {
+                    name: '中度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [5, 1, 0, 0, 2, 3, 1,1, 4, 1]
+                },
+                {
+                    name: '重度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [0, 0, 0, 0, 0, 0,0, 2, 1, 0]
+                }
+            ]
+        };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+  	    </div>
+	    </div>
+	</div>
+</section> 
+
+<br></br>
+<section id='part2-content1'>
+    <div class="container-fluid">
+    <div class="col-lg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <p class="lead"><strong><em>烟粉灰尘情况</em></strong> 不好说啊康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p>
+        </div>
+    </div>
+    <div class="text-center"><h4>2011-2017年城市粉尘排放情况情况</h4>
+        <h5>烟(粉)尘排放量(吨)</h5></div>
+    <div class="row">
+        <div class="col-lg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+        <script src="js/echarts.js"></script>
+        <div id="part2-content1_graph2" style="width: 80%px;height:500px;"></div>
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('part2-content1_graph2'));
+    
+            // 指定图表的配置项和数据
+            
+                option = {
+                tooltip : {
+                    trigger: 'axis',
+                    axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                        type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+                legend: {
+                    data:['北京','上海','重庆','天津','全国平均']
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis : [
+                    {
+                        type : 'category',
+                        data : ['2011','2012','2013','2014','2015','2016','2017']
+                    }
+                ],
+                yAxis : [
+                    {
+                        type : 'value'
+                    }
+                ],
+                series : [
+                    {
+                        name:'北京',
+                        type:'bar',
+                        data:[65848.04,66824.78,59285.95,57372.45,49386.55,34535.35,20423.74,]
+                    },
+                    {
+                        name:'上海',
+                        type:'bar',
+                        data:[89828.4,87148.42,80924.98,141650.1,120668.29,79455.41,47032.25,]
+                    },
+                    {
+                        name:'重庆',
+                        type:'bar',
+                        data:[180971.76,182265.7,191204.48,226130.56,209078.14,95799.42,83302.84,]
+                    },
+                    {
+                        name:'天津',
+                        type:'bar',
+                        data:[75922.53,84064,87456.88,139511.47,100685.72,78144.13,65191.22,]
+                    },
+                    {
+                        name:'全国平均',
+                        type:'bar',
+                        data:[19464.62005,18809.35737,19454.20207,26495.44533,23409.63881,15382.99391,12119.69962,]   
+                    }
+                ]
+            };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+        </div>
+        </div>
+    </div>
+    </div>
+</section> 
+
+<br></br>
+<section id='part2-content2'>
+    <div class="container-fluid">
+    <div class="text-center"><h3>垃圾排放怎么了</h3></div>
+    <div class="col-lg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p>
+        </div>
+    </div>
+    <div class="text-center"><h4>2013-2019年城市月度空气质量情况</h4><h5>AQI指标</h5></div>
+    <div class="row">
+        <div class="col-lg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+        <script src="js/echarts.js"></script>
+        <div id="part2-content2_graph1" style="width: 80%px;height:500px;"></div>
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('part2-content2_graph1'));
+    
+            // 指定图表的配置项和数据
+            
+        option = {
+            tooltip : {
+                trigger: 'axis',
+                axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                    type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            legend: {
+                data: ['优', '良','轻度污染','中度污染','重度污染']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                top: '10%',
+                containLabel: true
+            },
+            xAxis:  {
+                type: 'value'
+            },
+            yAxis: {
+                type: 'category',
+                data: ['北京','上海','深圳','广州','重庆','天津','苏州','武汉',
+                '成都','杭州']
+            },
+            series: [
+                {
+                    name: '优',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [0, 0, 23, 3, 0,0,0,0,0,0]
+                },
+                {
+                    name: '良',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [25, 59, 44, 60, 53, 29, 53,40, 43, 57]
+                },
+                {
+                    name: '轻度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [35, 5, 1, 2, 10, 33, 11,22, 17, 7]
+                },
+                {
+                    name: '中度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [5, 1, 0, 0, 2, 3, 1,1, 4, 1]
+                },
+                {
+                    name: '重度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [0, 0, 0, 0, 0, 0,0, 2, 1, 0]
+                }
+            ]
+        };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+        </div>
+        </div>
+    </div>
+</section> 
+
+<br></br>
+<section id='part2-content3'>
+    <div class="container-fluid">
+    <div class="text-center"><h3>噪声污染</h3></div>
+    <div class="col-lg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p>
+        </div>
+    </div>
+    <div class="text-center"><h4>2013-2019年城市月度空气质量情况</h4><h5>AQI指标</h5></div>
+    <div class="row">
+        <div class="col-lg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+        <script src="js/echarts.js"></script>
+        <div id="part2-content3_graph1" style="width: 80%px;height:500px;"></div>
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('part2-content3_graph1'));
+    
+            // 指定图表的配置项和数据
+            
+        option = {
+            tooltip : {
+                trigger: 'axis',
+                axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                    type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            legend: {
+                data: ['优', '良','轻度污染','中度污染','重度污染']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                top: '10%',
+                containLabel: true
+            },
+            xAxis:  {
+                type: 'value'
+            },
+            yAxis: {
+                type: 'category',
+                data: ['北京','上海','深圳','广州','重庆','天津','苏州','武汉',
+                '成都','杭州']
+            },
+            series: [
+                {
+                    name: '优',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [0, 0, 23, 3, 0,0,0,0,0,0]
+                },
+                {
+                    name: '良',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [25, 59, 44, 60, 53, 29, 53,40, 43, 57]
+                },
+                {
+                    name: '轻度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [35, 5, 1, 2, 10, 33, 11,22, 17, 7]
+                },
+                {
+                    name: '中度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [5, 1, 0, 0, 2, 3, 1,1, 4, 1]
+                },
+                {
+                    name: '重度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [0, 0, 0, 0, 0, 0,0, 2, 1, 0]
+                }
+            ]
+        };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+        </div>
+        </div>
+    </div>
+</section> 
+
+  <br></br>
+<section id='part3-title' class="bg-primary">
+	<div class="container-fluid">
+    <div class="row text-center"> 
+    	<br></br>
+    	<div class="service-item">
+        <span class="fa-stack fa-5x">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-male fa-stack-1x text-primary"></i>
+        </span>
+        <h2><strong>居民生活</strong></h2>
+        </div>
+      	<div class="col-lg-12">
+      		<div class="col-lg-2"></div>
+    		<div class="col-lg-8">
+			<p class="lead">
+			<strong><em>公共资源</em></strong> 
+			（common resource）是指自然生成或自然存在的资源，它能为人类提供生存、发展、享受的自然物质与自然条件，这些资源的所有权由全体社会成员共同享有，是人类社会经济发展共同所有的基础条件。
+			</p>
+    		</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+<br></br>
+<section id='part3-content1'>
+    <div class="container-fluid">
+    <div class="text-center"><h3>就业困难</h3></div>
+    <div class="col-lg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p>
+        </div>
+    </div>
+    <div class="text-center"><h4>2013-2019年城市月度空气质量情况</h4><h5>AQI指标</h5></div>
+    <div class="row">
+        <div class="col-lg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+        <script src="js/echarts.js"></script>
+        <div id="part3-content1_graph1" style="width: 80%px;height:500px;"></div>
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('part3-content1_graph1'));
+    
+            // 指定图表的配置项和数据
+            
+        option = {
+            tooltip : {
+                trigger: 'axis',
+                axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                    type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            legend: {
+                data: ['优', '良','轻度污染','中度污染','重度污染']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                top: '10%',
+                containLabel: true
+            },
+            xAxis:  {
+                type: 'value'
+            },
+            yAxis: {
+                type: 'category',
+                data: ['北京','上海','深圳','广州','重庆','天津','苏州','武汉',
+                '成都','杭州']
+            },
+            series: [
+                {
+                    name: '优',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [0, 0, 23, 3, 0,0,0,0,0,0]
+                },
+                {
+                    name: '良',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [25, 59, 44, 60, 53, 29, 53,40, 43, 57]
+                },
+                {
+                    name: '轻度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [35, 5, 1, 2, 10, 33, 11,22, 17, 7]
+                },
+                {
+                    name: '中度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [5, 1, 0, 0, 2, 3, 1,1, 4, 1]
+                },
+                {
+                    name: '重度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [0, 0, 0, 0, 0, 0,0, 2, 1, 0]
+                }
+            ]
+        };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+        </div>
+        </div>
+    </div>
+</section> 
+
+<br></br>
+<section id='part3-content2'>
+    <div class="container-fluid">
+    <div class="text-center"><h3>抚养负担</h3></div>
+    <div class="col-lg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p>
+        </div>
+    </div>
+    <div class="text-center"><h4>2013-2019年城市月度空气质量情况</h4><h5>AQI指标</h5></div>
+    <div class="row">
+        <div class="col-lg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+        <script src="js/echarts.js"></script>
+        <div id="part3-content2_graph1" style="width: 80%px;height:500px;"></div>
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('part3-content2_graph1'));
+    
+            // 指定图表的配置项和数据
+            
+        option = {
+            tooltip : {
+                trigger: 'axis',
+                axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                    type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            legend: {
+                data: ['优', '良','轻度污染','中度污染','重度污染']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                top: '10%',
+                containLabel: true
+            },
+            xAxis:  {
+                type: 'value'
+            },
+            yAxis: {
+                type: 'category',
+                data: ['北京','上海','深圳','广州','重庆','天津','苏州','武汉',
+                '成都','杭州']
+            },
+            series: [
+                {
+                    name: '优',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [0, 0, 23, 3, 0,0,0,0,0,0]
+                },
+                {
+                    name: '良',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [25, 59, 44, 60, 53, 29, 53,40, 43, 57]
+                },
+                {
+                    name: '轻度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [35, 5, 1, 2, 10, 33, 11,22, 17, 7]
+                },
+                {
+                    name: '中度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [5, 1, 0, 0, 2, 3, 1,1, 4, 1]
+                },
+                {
+                    name: '重度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [0, 0, 0, 0, 0, 0,0, 2, 1, 0]
+                }
+            ]
+        };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+        </div>
+        </div>
+    </div>
+</section> 
+
+<br></br>
+<section id='part3-content3'>
+    <div class="container-fluid">
+    <div class="text-center"><h3>关系疏离</h3></div>
+    <div class="col-lg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p>
+        </div>
+    </div>
+    <div class="text-center"><h4>2013-2019年城市月度空气质量情况</h4><h5>AQI指标</h5></div>
+    <div class="row">
+        <div class="col-lg-12">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+        <script src="js/echarts.js"></script>
+        <div id="part3-content3_graph1" style="width: 80%px;height:500px;"></div>
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('part3-content3_graph1'));
+    
+            // 指定图表的配置项和数据
+            
+        option = {
+            tooltip : {
+                trigger: 'axis',
+                axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                    type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            legend: {
+                data: ['优', '良','轻度污染','中度污染','重度污染']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                top: '10%',
+                containLabel: true
+            },
+            xAxis:  {
+                type: 'value'
+            },
+            yAxis: {
+                type: 'category',
+                data: ['北京','上海','深圳','广州','重庆','天津','苏州','武汉',
+                '成都','杭州']
+            },
+            series: [
+                {
+                    name: '优',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [0, 0, 23, 3, 0,0,0,0,0,0]
+                },
+                {
+                    name: '良',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [25, 59, 44, 60, 53, 29, 53,40, 43, 57]
+                },
+                {
+                    name: '轻度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [35, 5, 1, 2, 10, 33, 11,22, 17, 7]
+                },
+                {
+                    name: '中度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [5, 1, 0, 0, 2, 3, 1,1, 4, 1]
+                },
+                {
+                    name: '重度污染',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'insideRight'
+                        }
+                    },
+                    data: [0, 0, 0, 0, 0, 0,0, 2, 1, 0]
+                }
+            ]
+        };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+        </div>
+        </div>
+    </div>
+</section> 
 
   <section id="footer" class="footer">
   <div class="container">
@@ -1346,7 +1780,7 @@
 <section id="footer" class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-lg-10 col-lg-offset-1 text-center">
+      <div class="col-lg-12 text-center">
 
       <!--  个人信息部分 -->
       <!--  个人信息部分 
