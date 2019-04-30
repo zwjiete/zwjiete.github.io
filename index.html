@@ -23,8 +23,15 @@
 
   <!-- Custom Fonts -->
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  
-
+  <!-- 可视化 D3 JavaScript -->
+  <script type="text/javascript" src="/js/d3.v3.js"></script>
+  <script type="text/javascript" src="js/echarts.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script> 
+   <script type="text/javascript" src="js/echarts-all-3.js"></script> 
+   <script type="text/javascript" src="js/dataTool.min.js"></script> 
+   <script type="text/javascript" src="js/china.js"></script> 
+   <script type="text/javascript" src="js/world.js"></script> 
+   
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -95,15 +102,18 @@
   <!-- /.container -->
 </section>
 
-  
-
-<!--  最下方的内容  -->
-<section id="Menu" >
-  <div class="container-fluid">
-    <div class="text-center"><h2>初识城市病</h2></div>
-    <div class="row">
-      <div class="col-lg-12">
-            <style type="text/css">
+  <!--  最下方的内容  -->
+<html>
+ <head></head>
+ <body>
+  <section id="Menu"> 
+   <div class="container-fluid"> 
+    <div class="text-center">
+     <h2>初识城市病</h2>
+    </div> 
+    <div class="row"> 
+     <div class="col-lg-12"> 
+      <style type="text/css">
             #mainBubble {
             background: #fff;
             border: solid 1px #ddd;
@@ -125,16 +135,13 @@
            stroke: #666;
            stroke-width: 1.5px;
           }
-         </style>
-         <script type="text/javascript" src="/js/d3.v3.js"
-        charset="utf-8"></script>
-        
-        <div id="mainBubble" style="height: 100%; width: 100%">
-        <svg class="mainBubbleSVG"  width="80%" height="100%">
-        <text id="bubbleItemNote" x="26%" y="90%" font-size="15" 
-        dominant-baseline="middle" alignment-baseline="middle"    
-        style="fill: rgb(136, 136, 136);"></text></svg></div>
-        <script>
+         </style> 
+      <div id="mainBubble" style="height: 100%; width: 100%"> 
+       <svg class="mainBubbleSVG" width="80%" height="100%"> 
+        <text id="bubbleItemNote" x="26%" y="90%" font-size="15" dominant-baseline="middle" alignment-baseline="middle" style="fill: rgb(136, 136, 136);"></text>
+       </svg>
+      </div> 
+      <script>
         var w = window.innerWidth*0.68*0.95;
         var h = Math.ceil(w*0.6);
         var oR = 0;
@@ -372,17 +379,19 @@
              }
           
         window.onresize = resetBubbles;
-        </script>
-        </div>
-        </div>
-      <!-- /.col-lg-10 -->
-    </div>
-    </div>
-    <!-- /.row -->
-    <br></br>
-    <br></br>
-</section>
- 
+        </script> 
+     </div> 
+    </div> 
+    <!-- /.col-lg-10 --> 
+   </div>  
+   <!-- /.row --> 
+   <br />
+   <br /> 
+   <br />
+   <br /> 
+  </section> 
+ </body>
+</html> 
   <section id="Menu" >
   	<div class="container-fluid">
     <div class="text-center"><h2>初识城市病</h2></div>
@@ -401,247 +410,263 @@
 	</div>
 	</div>
 </section> 
-  <section id='part1-title' class="bg-primary">
-	<br></br>
-	<div class="container-fluid">
-    <div class="row text-center">
-    	<div class="service-item">
-        <span class="fa-stack fa-5x">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-tree fa-stack-1x text-primary"></i>
-        </span>
-        <h2><strong>公共资源紧张</strong></h2>
-        </div>
-    </div>
-    <div class="col-lg-12">
-      <div class="col-lg-2"></div>
-      <div class="col-lg-8">
-			  <p class="lead"><strong><em>中国陆地面积</em></strong> 960万平方公里,占亚洲大陆土地面积的22.1%,占全世界陆地面积的 6.4%,是世界上国土面积广阔的国家之一,位居世界第三。
-			  <br></br>
-			  <strong>中国</strong>丰富的土地资源具有两个显著的地理特色：一、海拔较高、起伏较大的山地（包括丘陵、山地和高原）所占的面积超过平地（平原和高平原）,成2/3与1/3之比；二、在复杂多样的生态环境中,形成草原多、耕地少、林地比例小、难利用土地比例大的特点。2018年,草原约占全国土地总面积的37.4%,耕地占10.4%,林地约占12.7%,而沙漠、戈壁、高寒荒漠、石山、冰川和永久积雪等难以利用的土地则合计约占20.5%。尽管如此,中国土地资源进一步充分合理利用的潜力仍很大,除现有草地、耕地和林地外,估计全国还有约3300万公顷的宜农荒地、6000多万公顷的草山草坡和9000多万公顷的宜林荒山、荒地和疏林地有待开发利用（见中国土地资源）。</p>
-      </div>
-    </div>
-	</div>
-</section>
-
-<br></br>
-<section id="part1-content1" >
-  <div class="container-fluid">
-  	<div class="text-center"><h3>土地占有是什么情况呀</h3></div>
-  	<div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-    	  <p class="lead"><strong><em>土地占有</em></strong> 是对土地的实际控制,由于土地所有权与使用权的分离,土地所有人不一定就是土地占有人,中国多数情况下,土地是由非所有人占有和使用的。</p>
-		</div>
-    </div>
-	  <br></br>
-    <div class="text-center"><h4>2008-2017年四城相关指标情况</h4>
-    	  <h5>城市人口密度(人/平方公里)</h5></div>
-        <div class="row">
-      	<div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-      	<script src="js/echarts.js"></script>
-      	<div id="part1-content1_graph1" style="width: 80%px;height:500px;"></div>
-      	<script type="text/javascript">
+  <html>
+ <head></head>
+ <body>
+  <section id="part1-title" class="bg-primary"> 
+   <br />
+   <br /> 
+   <div class="container-fluid"> 
+    <div class="row text-center"> 
+     <div class="service-item"> 
+      <span class="fa-stack fa-5x"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-tree fa-stack-1x text-primary"></i> </span> 
+      <h2><strong>公共资源紧张</strong></h2> 
+     </div> 
+    </div> 
+    <div class="col-lg-12"> 
+     <div class="col-lg-2"></div> 
+     <div class="col-lg-8"> 
+      <p class="lead"><strong><em>中国陆地面积</em></strong> 960万平方公里,占亚洲大陆土地面积的22.1%,占全世界陆地面积的 6.4%,是世界上国土面积广阔的国家之一,位居世界第三。 <br /><br /> <strong>中国</strong>丰富的土地资源具有两个显著的地理特色：一、海拔较高、起伏较大的山地（包括丘陵、山地和高原）所占的面积超过平地（平原和高平原）,成2/3与1/3之比；二、在复杂多样的生态环境中,形成草原多、耕地少、林地比例小、难利用土地比例大的特点。2018年,草原约占全国土地总面积的37.4%,耕地占10.4%,林地约占12.7%,而沙漠、戈壁、高寒荒漠、石山、冰川和永久积雪等难以利用的土地则合计约占20.5%。尽管如此,中国土地资源进一步充分合理利用的潜力仍很大,除现有草地、耕地和林地外,估计全国还有约3300万公顷的宜农荒地、6000多万公顷的草山草坡和9000多万公顷的宜林荒山、荒地和疏林地有待开发利用（见中国土地资源）。</p> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <br />
+  <br /> 
+  <section id="part1-content1"> 
+   <div class="container-fluid"> 
+    <div class="text-center">
+     <h3>土地占有是什么情况呀</h3>
+    </div> 
+    <div class="col-lg-12"> 
+     <div class="col-lg-2"></div> 
+     <div class="col-lg-8"> 
+      <p class="lead"><strong><em>土地占有</em></strong> 是对土地的实际控制,由于土地所有权与使用权的分离,土地所有人不一定就是土地占有人,中国多数情况下,土地是由非所有人占有和使用的。</p> 
+     </div> 
+    </div> 
+    <br />
+    <br /> 
+    <div class="text-center">
+     <h4>2008-2017年四城相关指标情况</h4> 
+     <h5>城市人口密度(人/平方公里)</h5>
+    </div> 
+    <div class="row"> 
+     <div class="col-lg-12"> 
+      <div class="col-lg-2"></div> 
+      <div class="col-lg-8"> 
+       <script src="js/echarts.js"></script> 
+       <div id="part1-content1_graph1" style="width: 80%px;height:500px;"></div> 
+       <script type="text/javascript">
         // 基于准备好的dom,初始化echarts实例
-        var myChart = echarts.init(document.getElementById('part1-content1_graph1'));
+        var myChart1 = echarts.init(document.getElementById('part1-content1_graph1'));
 
         // 指定图表的配置项和数据
         option = {
-		    tooltip: {
-		        trigger: 'axis'
-		    },
-		    legend: {
-		        data:['北京', '上海', '天津', '全国']
-		    },
-		    grid: {
-		        left: '2%',
-		        right: '2%',
-		        bottom: '2%',
-		        containLabel: true
-		    },
-		    xAxis: {
-		        type: 'category',
-		        data: ['2008', '2009', '2010', '2011', '2012',
-		         '2013','2014', '2015', '2016', '2017']
-		    },
-		    yAxis: {
-		        type: 'value'
-		    },
-		    series: [
-		        {
-		            name:'北京',
-		            type:'line',
-		            step: 'middle',
-		            data:[1181,1224,1383,1428,1464,
-		            1498,1525,1541,1145,1144]
-		        },
-		        {
-		            name:'上海',
-		            type:'line',
-		            step: 'middle',
-		            data:[2978,3030,3630,3702,3754,
-		            3809,3826,3809,3816,3814,]
-		        },
-		        {
-		            name:'天津',
-		            type:'line',
-		            step: 'middle',
-		            data:[2858,2716,2752,2636,2782,
-		            2843,3328,3492,3639,3276,]
-		        },
-		        {
-		            name:'全国',
-		            type:'line',
-		            step: 'middle',
-		            data:[2080,2147,2209,2228,2307,
-		            2362,2419,2399,2408,2477,]
-		        }
-		    ]
-		};
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['北京', '上海', '天津', '全国']
+        },
+        grid: {
+            left: '2%',
+            right: '2%',
+            bottom: '2%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'category',
+            data: ['2008', '2009', '2010', '2011', '2012',
+             '2013','2014', '2015', '2016', '2017']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name:'北京',
+                type:'line',
+                step: 'middle',
+                data:[1181,1224,1383,1428,1464,
+                1498,1525,1541,1145,1144]
+            },
+            {
+                name:'上海',
+                type:'line',
+                step: 'middle',
+                data:[2978,3030,3630,3702,3754,
+                3809,3826,3809,3816,3814,]
+            },
+            {
+                name:'天津',
+                type:'line',
+                step: 'middle',
+                data:[2858,2716,2752,2636,2782,
+                2843,3328,3492,3639,3276,]
+            },
+            {
+                name:'全国',
+                type:'line',
+                step: 'middle',
+                data:[2080,2147,2209,2228,2307,
+                2362,2419,2399,2408,2477,]
+            }
+        ]
+    };
 
         // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-    	</script>
-     	</div>
-    </div>
-    </div>
-  </div>
-</section>
-
-<br></br>
-<section id="part1-content2" >
-  <div class="container-fluid">
-  	<div class="text-center"><h3>水资源是什么情况呀</h3></div>
-  	<div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-		    <p class="lead"><strong><em>根据</em></strong> 根据世界气象组织（WMO）和联合国教科文组织（UNESCO）的《INTERNATIONAL GLOSSARY OF HYDROLOGY》（国际水文学名词术语,第三版,2012年）中有关水资源的定义,水资源是指可资利用或有可能被利用的水源,这个水源应具有足够的数量和合适的质量,并满足某一地方在一段时间内具体利用的需求。根据全国科学技术名词审定委员会公布的水利科技名词（科学出版社,1997）中有关水资源的定义,水资源是指地球上具有一定数量和可用质量能从自然界获得补充并可资利用的水。</p>
-		</div>
-    </div>
-	<br></br>
-	<br></br>
-    <div class="text-center"><h4>水资源的表格呀</h4>
-    	<h5>人均水资源量(立方米/人)</h5></div>
-    <div class="row">
-      	<div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-      	<script src="js/echarts.js"></script>
-      	<div id="part1-content2_graph1" style="width: 80%px;height:500px;"></div>
-      	<script type="text/javascript">
+        myChart1.setOption(option);
+      </script> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <br />
+  <br /> 
+  <section id="part1-content2"> 
+   <div class="container-fluid"> 
+    <div class="text-center">
+     <h3>水资源是什么情况呀</h3>
+    </div> 
+    <div class="col-lg-12"> 
+     <div class="col-lg-2"></div> 
+     <div class="col-lg-8"> 
+      <p class="lead"><strong><em>根据</em></strong> 根据世界气象组织（WMO）和联合国教科文组织（UNESCO）的《INTERNATIONAL GLOSSARY OF HYDROLOGY》（国际水文学名词术语,第三版,2012年）中有关水资源的定义,水资源是指可资利用或有可能被利用的水源,这个水源应具有足够的数量和合适的质量,并满足某一地方在一段时间内具体利用的需求。根据全国科学技术名词审定委员会公布的水利科技名词（科学出版社,1997）中有关水资源的定义,水资源是指地球上具有一定数量和可用质量能从自然界获得补充并可资利用的水。</p> 
+     </div> 
+    </div> 
+    <br />
+    <br /> 
+    <br />
+    <br /> 
+    <div class="text-center">
+     <h4>水资源的表格呀</h4> 
+     <h5>人均水资源量(立方米/人)</h5>
+    </div> 
+    <div class="row"> 
+     <div class="col-lg-12"> 
+      <div class="col-lg-2"></div> 
+      <div class="col-lg-8"> 
+       <script src="js/echarts.js"></script> 
+       <div id="part1-content2_graph1" style="width: 80%px;height:500px;"></div> 
+       <script type="text/javascript">
         // 基于准备好的dom,初始化echarts实例
-        var myChart = echarts.init(document.getElementById('part1-content2_graph1'));
+        var myChart2 = echarts.init(document.getElementById('part1-content2_graph1'));
 
         // 指定图表的配置项和数据
         
-		option = {
-			tooltip : {
-    		    trigger: 'axis',
-    		    axisPointer: {
-    		        type: 'cross',
-    		        label: {
-    		            backgroundColor: '#6a7985'
-    		        }
-    		    }
-    		},
-    		legend: {
-    		    data:['北京','上海','重庆','天津','全国']
-    		},
-    		grid: {
-    		    left: '3%',
-    		    right: '3%',
-    		    bottom: '3%',
-    		    containLabel: true
-    		},
-    		xAxis : [
-    		    {
-    		        type : 'category',
-    		        boundaryGap : false,
-    		        data : ['2008', '2009', '2010', '2011', '2012',
-		         '2013','2014', '2015', '2016', '2017']
-    		    }
-    		],
-    		yAxis : [
-    		    {
-    		        type : 'value'
-    		    }
-    		],
-    		series : [
-    		    {
-    		        name:'北京',
-    		        type:'line',
-    		        stack: '总量',
-    		        areaStyle: {},
-    		        data:[205.53,126.61,124.2,134.71,193.24,
-    		        118.59,95.15,124.01,161.6,137.21,]
-    		    },
-    		    {
-    		        name:'上海',
-    		        type:'line',
-    		        stack: '总量',
-    		        areaStyle: {},
-    		        data:[197.54,218.28,163.1,89.12,143.4,116.9,
-    		        194.79,264.82,252.33,140.56,]
-    		    },
-    		    {
-    		        name:'重庆',
-    		        type:'line',
-    		        stack: '总量',
-    		        areaStyle: {},
-    		        data:[2040.32,1600.27,1616.8,1773.3,1626.5,
-    		        1603.87,2155.94,1518.65,1994.72,2142.92,]
-    		    },
-    		    {
-    		        name:'天津',
-    		        type:'line',
-    		        stack: '总量',
-    		        areaStyle: {normal: {}},
-    		        data:[159.76,126.79,72.8,115.96,237.99,
-    		        101.49,76.08,83.56,121.58,83.36,]
-    		    },
-    		    {
-    		        name:'全国',
-    		        type:'line',
-    		        stack: '总量',
-    		        label: {
-    		            normal: {
-    		                show: true,
-    		                position: 'top'
-    		            }
-    		        },
-    		        areaStyle: {normal: {}},
-    		        data:[2071.05,1816.18,2310.41,1730.2,2186.2,
-    		        2059.69,1998.64,2039.25,2354.92,2074.53,]
-    		    }
-    		]
-		};
+    option = {
+      tooltip : {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                label: {
+                    backgroundColor: '#6a7985'
+                }
+            }
+        },
+        legend: {
+            data:['北京','上海','重庆','天津','全国']
+        },
+        grid: {
+            left: '3%',
+            right: '3%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis : [
+            {
+                type : 'category',
+                boundaryGap : false,
+                data : ['2008', '2009', '2010', '2011', '2012',
+             '2013','2014', '2015', '2016', '2017']
+            }
+        ],
+        yAxis : [
+            {
+                type : 'value'
+            }
+        ],
+        series : [
+            {
+                name:'北京',
+                type:'line',
+                stack: '总量',
+                areaStyle: {},
+                data:[205.53,126.61,124.2,134.71,193.24,
+                118.59,95.15,124.01,161.6,137.21,]
+            },
+            {
+                name:'上海',
+                type:'line',
+                stack: '总量',
+                areaStyle: {},
+                data:[197.54,218.28,163.1,89.12,143.4,116.9,
+                194.79,264.82,252.33,140.56,]
+            },
+            {
+                name:'重庆',
+                type:'line',
+                stack: '总量',
+                areaStyle: {},
+                data:[2040.32,1600.27,1616.8,1773.3,1626.5,
+                1603.87,2155.94,1518.65,1994.72,2142.92,]
+            },
+            {
+                name:'天津',
+                type:'line',
+                stack: '总量',
+                areaStyle: {normal: {}},
+                data:[159.76,126.79,72.8,115.96,237.99,
+                101.49,76.08,83.56,121.58,83.36,]
+            },
+            {
+                name:'全国',
+                type:'line',
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'top'
+                    }
+                },
+                areaStyle: {normal: {}},
+                data:[2071.05,1816.18,2310.41,1730.2,2186.2,
+                2059.69,1998.64,2039.25,2354.92,2074.53,]
+            }
+        ]
+    };
 
 
         // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-        </script>
-        </div>
-        </div>
-    </div>
-</section>
-
-<br></br>
-<section id='part1-content3'>
-    <div class="container-fluid">
-    <div class="text-center"><h3>教育资源怎么了</h3></div>
-    <div class="row">
-        <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-        <p class="lead"><strong><em>根据</em></strong> 根据世界气象组织（WMO）和联合国教科文组织（UNESCO）的《INTERNATIONAL GLOSSARY OF HYDROLOGY》（国际水文学名词术语,第三版,2012年）中有关水资源的定义,水资源是指可资利用或有可能被利用的水源,这个水源应具有足够的数量和合适的质量,并满足某一地方在一段时间内具体利用的需求。根据全国科学技术名词审定委员会公布的水利科技名词（科学出版社,1997）中有关水资源的定义,水资源是指地球上具有一定数量和可用质量能从自然界获得补充并可资利用的水。</p>
-        <div class="text-center"><h4>2017师生比</h4><h5>教师数=1</h5></div>
-        <script src="js/echarts.js"></script>
-        <div id="part1-content3_graph1" style="width: 80%px;height:500px;"></div>
-        <script type="text/javascript">
+        myChart2.setOption(option);
+        </script> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+  </section> 
+  <br />
+  <br /> 
+  <section id="part1-content3"> 
+   <div class="container-fluid"> 
+    <div class="text-center">
+     <h3>教育资源怎么了</h3>
+    </div> 
+    <div class="row"> 
+     <div class="col-lg-12"> 
+      <div class="col-lg-2"></div> 
+      <div class="col-lg-8"> 
+       <p class="lead"><strong><em>根据</em></strong> 根据世界气象组织（WMO）和联合国教科文组织（UNESCO）的《INTERNATIONAL GLOSSARY OF HYDROLOGY》（国际水文学名词术语,第三版,2012年）中有关水资源的定义,水资源是指可资利用或有可能被利用的水源,这个水源应具有足够的数量和合适的质量,并满足某一地方在一段时间内具体利用的需求。根据全国科学技术名词审定委员会公布的水利科技名词（科学出版社,1997）中有关水资源的定义,水资源是指地球上具有一定数量和可用质量能从自然界获得补充并可资利用的水。</p> 
+       <div class="text-center">
+        <h4>2017师生比</h4>
+        <h5>教师数=1</h5>
+       </div> 
+       <script src="js/echarts.js"></script> 
+       <div id="part1-content3_graph1" style="width: 80%px;height:500px;"></div> 
+       <script type="text/javascript">
             // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('part1-content3_graph1'));
+            var myChart3 = echarts.init(document.getElementById('part1-content3_graph1'));
             option = {
                 legend: {},
                 tooltip: {},
@@ -667,41 +692,36 @@
             
         
             // 使用刚指定的配置项和数据显示图表。
-            myChart.setOption(option);
-        </script>
-        </div>
-        </div>
-    </div>
-</section> 
-
-<br></br>
-<section id='part1-content4'>
-    <div class="container-fluid">
-    <div class="text-center"><h2>交通资源好紧张哟</h2></div>
-    <div class="row">
-        <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8"> 
-        <p class="lead">
-        <strong><em>有轨电车</em></strong> 开通以后，城区公共交通更加便利了，但我区石湖荡镇、新浜镇、泖港镇、叶榭镇等偏远乡镇的公共交通还是十分不便。”区政协委员朱利明建议，应以此次有轨电车开通运行为契机，重新规划我区公共交通线路，最大限度地利用目前的公共交通资源，为我区市民出行提供便利，特别是进一步改善农村的交通，为农村发展提供有力保障。
-        <br></br>
-        <strong>“例如</strong>从新浜到城区的公交线路只有松江35路一条，且发车间隔时间长，末班车时间早，当地居民出行相当不便利。”朱利明认为，乡村要振兴，乡村通往城市的公共交通能力必须提升。朱利明建议以轨道交通9号线为第一层面，有轨电车为第二层面，公交车辆为第三层面构筑起松江全方位、立体化的公共交通体系。
-        </p>
-        </div>
-        </div>
-    </div>
-</section> 
-
-<section id='part1-content4-eg' style="height: 60%; width: 80%; margin: 0;padding-left: 20%">
-    <div id="part1-content4-graph1" style="height: 100%;"></div>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/echarts-all-3.js"></script>
-    <script type="text/javascript" src="js/dataTool.min.js"></script>
-    <script type="text/javascript" src="js/china.js"></script>
-    <script type="text/javascript" src="js/world.js"></script>
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=zeCTLtL6V1rGxZU1MfZC5NyIsgAXmCvt"></script>
-    <script type="text/javascript" src="js/bmap.min.js"></script>
-    <script type="text/javascript">
+            myChart3.setOption(option);
+        </script> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+  </section> 
+  <br />
+  <br /> 
+  <section id="part1-content4"> 
+   <div class="container-fluid"> 
+    <div class="text-center">
+     <h2>交通资源好紧张哟</h2>
+    </div> 
+    <div class="row"> 
+     <div class="col-lg-12"> 
+      <div class="col-lg-2"></div> 
+      <div class="col-lg-8"> 
+       <p class="lead"> <strong><em>有轨电车</em></strong> 开通以后，城区公共交通更加便利了，但我区石湖荡镇、新浜镇、泖港镇、叶榭镇等偏远乡镇的公共交通还是十分不便。”区政协委员朱利明建议，应以此次有轨电车开通运行为契机，重新规划我区公共交通线路，最大限度地利用目前的公共交通资源，为我区市民出行提供便利，特别是进一步改善农村的交通，为农村发展提供有力保障。 <br /><br /> <strong>“例如</strong>从新浜到城区的公交线路只有松江35路一条，且发车间隔时间长，末班车时间早，当地居民出行相当不便利。”朱利明认为，乡村要振兴，乡村通往城市的公共交通能力必须提升。朱利明建议以轨道交通9号线为第一层面，有轨电车为第二层面，公交车辆为第三层面构筑起松江全方位、立体化的公共交通体系。 </p> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+  </section> 
+  <section id="part1-content4-eg" style="height: 60%; width: 80%; margin: 0;padding-left: 20%"> 
+   <div id="part1-content4-graph1" style="height: 100%;"></div> 
+   
+   <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=zeCTLtL6V1rGxZU1MfZC5NyIsgAXmCvt"></script> 
+   <script type="text/javascript" src="js/bmap.min.js"></script> 
+   <script type="text/javascript">
     var dom = document.getElementById("part1-content4-graph1");
     var myChart = echarts.init(dom);
     var app = {};
@@ -902,57 +922,58 @@
         if (option && typeof option === "object") {
         myChart.setOption(option, true);
         }
-    </script>
-</section>
-  
-  <br></br>
-<section id='part2-title' class="bg-primary">
-	<div class="container-fluid">
+    </script> 
+  </section> 
+ </body>
+</html>  
+  <html>
+ <head></head>
+ <body>
+  <br />
+  <br /> 
+  <section id="part2-title" class="bg-primary"> 
+   <div class="container-fluid"> 
     <div class="row text-center"> 
-    	<br></br>
-    	<div class="service-item">
-        <span class="fa-stack fa-5x">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-trash fa-stack-1x text-primary"></i>
-        </span>
-        <h2><strong>环境污染</strong></h2>
-        </div>
-    </div>
-    <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-		<p class="lead">
-		<strong><em>由于</em></strong> 
-		人们对工业高度发达的负面影响预料不够，预防不利，导致了全球性的三大危机：资源短缺、环境污染、生态破坏。环境污染指自然的或人为的破坏，向环境中添加某种物质而超过环境的自净能力而产生危害的行为。（或由于人为的因素，环境受到有害物质的污染，使生物的生长繁殖和人类的正常生活受到有害影响。）由于人为因素使环境的构成或状态发生变化，环境素质下降，从而扰乱和破坏了生态系统和人类的正常生产和生活条件的现象。
-		<br></br>
-		<strong>针对</strong>环境污染刑事案件办理中的取证难、鉴定难、认定难等问题，最高人民法院、最高人民检察院发布司法解释《关于办理环境污染刑事案件适用法律若干问题的解释》，对有关环境污染犯罪的定罪量刑标准作出了新的规定，以从严惩治和防范环境污染。根据《解释》，致使一人以上重伤或者三人以上轻伤即构成“严重污染环境”，将被以污染环境罪追究刑事责任。
-		</p>
-    	</div>
-	</div>
-    </div>
-    </div>
-</section>
-
-<br></br>
-<section id='part2-content1'>
-    <div class="container-fluid">
-    <div class="text-center"><h3>空气污染</h3></div>
-    <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p>
-        </div>
-    </div>
-    <div class="text-center"><h4>2013-2019年城市月度空气质量情况</h4><h5>AQI指标</h5></div>
-    <div class="row">
-        <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-        <script src="js/echarts.js"></script>
-        <div id="part2-content1_graph1" style="width: 80%px;height:500px;"></div>
-        <script type="text/javascript">
+     <br />
+     <br /> 
+     <div class="service-item"> 
+      <span class="fa-stack fa-5x"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-trash fa-stack-1x text-primary"></i> </span> 
+      <h2><strong>环境污染</strong></h2> 
+     </div> 
+    </div> 
+    <div class="col-lg-12"> 
+     <div class="col-lg-2"></div> 
+     <div class="col-lg-8"> 
+      <p class="lead"> <strong><em>由于</em></strong> 人们对工业高度发达的负面影响预料不够，预防不利，导致了全球性的三大危机：资源短缺、环境污染、生态破坏。环境污染指自然的或人为的破坏，向环境中添加某种物质而超过环境的自净能力而产生危害的行为。（或由于人为的因素，环境受到有害物质的污染，使生物的生长繁殖和人类的正常生活受到有害影响。）由于人为因素使环境的构成或状态发生变化，环境素质下降，从而扰乱和破坏了生态系统和人类的正常生产和生活条件的现象。 <br /><br /> <strong>针对</strong>环境污染刑事案件办理中的取证难、鉴定难、认定难等问题，最高人民法院、最高人民检察院发布司法解释《关于办理环境污染刑事案件适用法律若干问题的解释》，对有关环境污染犯罪的定罪量刑标准作出了新的规定，以从严惩治和防范环境污染。根据《解释》，致使一人以上重伤或者三人以上轻伤即构成“严重污染环境”，将被以污染环境罪追究刑事责任。 </p> 
+     </div> 
+    </div> 
+   </div>  
+  </section> 
+  <br />
+  <br /> 
+  <section id="part2-content1"> 
+   <div class="container-fluid"> 
+    <div class="text-center">
+     <h3>空气污染</h3>
+    </div> 
+    <div class="col-lg-12"> 
+     <div class="col-lg-2"></div> 
+     <div class="col-lg-8"> 
+      <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p> 
+     </div> 
+    </div> 
+    <div class="text-center">
+     <h4>2013-2019年城市月度空气质量情况</h4>
+     <h5>AQI指标</h5>
+    </div> 
+    <div class="row"> 
+     <div class="col-lg-12"> 
+      <div class="col-lg-2"></div> 
+      <div class="col-lg-8"> 
+       <div id="part2-content1_graph1" style="width: 80%px;height:500px;"></div> 
+       <script type="text/javascript">
             // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('part2-content1_graph1'));
+            var myChart4 = echarts.init(document.getElementById('part2-content1_graph1'));
     
             // 指定图表的配置项和数据
             
@@ -1045,33 +1066,35 @@
             ]
         };
             // 使用刚指定的配置项和数据显示图表。
-            myChart.setOption(option);
-        </script>
-  	    </div>
-	    </div>
-	</div>
-</section> 
-
-<br></br>
-<section id='part2-content1'>
-    <div class="container-fluid">
-    <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <p class="lead"><strong><em>烟粉灰尘情况</em></strong> 不好说啊康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p>
-        </div>
-    </div>
-    <div class="text-center"><h4>2011-2017年城市粉尘排放情况情况</h4>
-        <h5>烟(粉)尘排放量(吨)</h5></div>
-    <div class="row">
-        <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-        <script src="js/echarts.js"></script>
-        <div id="part2-content1_graph2" style="width: 80%px;height:500px;"></div>
-        <script type="text/javascript">
+            myChart4.setOption(option);
+        </script> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+  </section> 
+  <br />
+  <br /> 
+  <section id="part2-content1"> 
+   <div class="container-fluid"> 
+    <div class="col-lg-12"> 
+     <div class="col-lg-2"></div> 
+     <div class="col-lg-8"> 
+      <p class="lead"><strong><em>烟粉灰尘情况</em></strong> 不好说啊康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p> 
+     </div> 
+    </div> 
+    <div class="text-center">
+     <h4>2011-2017年城市粉尘排放情况情况</h4> 
+     <h5>烟(粉)尘排放量(吨)</h5>
+    </div> 
+    <div class="row"> 
+     <div class="col-lg-12"> 
+      <div class="col-lg-2"></div> 
+      <div class="col-lg-8"> 
+       <div id="part2-content1_graph2" style="width: 80%px;height:500px;"></div> 
+       <script type="text/javascript">
             // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('part2-content1_graph2'));
+            var myChart5 = echarts.init(document.getElementById('part2-content1_graph2'));
     
             // 指定图表的配置项和数据
             
@@ -1131,34 +1154,38 @@
                 ]
             };
             // 使用刚指定的配置项和数据显示图表。
-            myChart.setOption(option);
-        </script>
-        </div>
-        </div>
-    </div>
-    </div>
-</section> 
-
-<br></br>
-<section id='part2-content2'>
-    <div class="container-fluid">
-    <div class="text-center"><h3>垃圾排放怎么了</h3></div>
-    <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p>
-        </div>
-    </div>
-    <div class="text-center"><h4>2013-2019年城市月度空气质量情况</h4><h5>AQI指标</h5></div>
-    <div class="row">
-        <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-        <script src="js/echarts.js"></script>
-        <div id="part2-content2_graph1" style="width: 80%px;height:500px;"></div>
-        <script type="text/javascript">
+            myChart5.setOption(option);
+        </script> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <br />
+  <br /> 
+  <section id="part2-content2"> 
+   <div class="container-fluid"> 
+    <div class="text-center">
+     <h3>垃圾排放怎么了</h3>
+    </div> 
+    <div class="col-lg-12"> 
+     <div class="col-lg-2"></div> 
+     <div class="col-lg-8"> 
+      <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p> 
+     </div> 
+    </div> 
+    <div class="text-center">
+     <h4>2013-2019年城市月度空气质量情况</h4>
+     <h5>AQI指标</h5>
+    </div> 
+    <div class="row"> 
+     <div class="col-lg-12"> 
+      <div class="col-lg-2"></div> 
+      <div class="col-lg-8"> 
+       <div id="part2-content2_graph1" style="width: 80%px;height:500px;"></div> 
+       <script type="text/javascript">
             // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('part2-content2_graph1'));
+            var myChart6 = echarts.init(document.getElementById('part2-content2_graph1'));
     
             // 指定图表的配置项和数据
             
@@ -1251,33 +1278,38 @@
             ]
         };
             // 使用刚指定的配置项和数据显示图表。
-            myChart.setOption(option);
-        </script>
-        </div>
-        </div>
-    </div>
-</section> 
-
-<br></br>
-<section id='part2-content3'>
-    <div class="container-fluid">
-    <div class="text-center"><h3>噪声污染</h3></div>
-    <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p>
-        </div>
-    </div>
-    <div class="text-center"><h4>2013-2019年城市月度空气质量情况</h4><h5>AQI指标</h5></div>
-    <div class="row">
-        <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-        <script src="js/echarts.js"></script>
-        <div id="part2-content3_graph1" style="width: 80%px;height:500px;"></div>
-        <script type="text/javascript">
+            myChart6.setOption(option);
+        </script> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+  </section> 
+  <br />
+  <br /> 
+  <section id="part2-content3"> 
+   <div class="container-fluid"> 
+    <div class="text-center">
+     <h3>噪声污染</h3>
+    </div> 
+    <div class="col-lg-12"> 
+     <div class="col-lg-2"></div> 
+     <div class="col-lg-8"> 
+      <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p> 
+     </div> 
+    </div> 
+    <div class="text-center">
+     <h4>2013-2019年城市月度空气质量情况</h4>
+     <h5>AQI指标</h5>
+    </div> 
+    <div class="row"> 
+     <div class="col-lg-12"> 
+      <div class="col-lg-2"></div> 
+      <div class="col-lg-8"> 
+       <div id="part2-content3_graph1" style="width: 80%px;height:500px;"></div> 
+       <script type="text/javascript">
             // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('part2-content3_graph1'));
+            var myChart7 = echarts.init(document.getElementById('part2-content3_graph1'));
     
             // 指定图表的配置项和数据
             
@@ -1370,58 +1402,63 @@
             ]
         };
             // 使用刚指定的配置项和数据显示图表。
-            myChart.setOption(option);
-        </script>
-        </div>
-        </div>
-    </div>
-</section> 
- 
-  <br></br>
-<section id='part3-title' class="bg-primary">
-	<div class="container-fluid">
+            myChart7.setOption(option);
+        </script> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+  </section> 
+ </body>
+</html> 
+  <html>
+ <head></head>
+ <body>
+  <br />
+  <br /> 
+  <section id="part3-title" class="bg-primary"> 
+   <div class="container-fluid"> 
     <div class="row text-center"> 
-    	<br></br>
-    	<div class="service-item">
-        <span class="fa-stack fa-5x">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-male fa-stack-1x text-primary"></i>
-        </span>
-        <h2><strong>居民生活</strong></h2>
-        </div>
-      	<div class="col-lg-12">
-      		<div class="col-lg-2"></div>
-    		<div class="col-lg-8">
-			<p class="lead">
-			<strong><em>公共资源</em></strong> 
-			（common resource）是指自然生成或自然存在的资源，它能为人类提供生存、发展、享受的自然物质与自然条件，这些资源的所有权由全体社会成员共同享有，是人类社会经济发展共同所有的基础条件。
-			</p>
-    		</div>
-		</div>
-	</div>
-	</div>
-</section>
-
-<br></br>
-<section id='part3-content1'>
-    <div class="container-fluid">
-    <div class="text-center"><h3>就业困难</h3></div>
-    <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p>
-        </div>
-    </div>
-    <div class="text-center"><h4>2013-2019年城市月度空气质量情况</h4><h5>AQI指标</h5></div>
-    <div class="row">
-        <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-        <script src="js/echarts.js"></script>
-        <div id="part3-content1_graph1" style="width: 80%px;height:500px;"></div>
-        <script type="text/javascript">
+     <br />
+     <br /> 
+     <div class="service-item"> 
+      <span class="fa-stack fa-5x"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-male fa-stack-1x text-primary"></i> </span> 
+      <h2><strong>居民生活</strong></h2> 
+     </div> 
+     <div class="col-lg-12"> 
+      <div class="col-lg-2"></div> 
+      <div class="col-lg-8"> 
+       <p class="lead"> <strong><em>公共资源</em></strong> （common resource）是指自然生成或自然存在的资源，它能为人类提供生存、发展、享受的自然物质与自然条件，这些资源的所有权由全体社会成员共同享有，是人类社会经济发展共同所有的基础条件。 </p> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <br />
+  <br /> 
+  <section id="part3-content1"> 
+   <div class="container-fluid"> 
+    <div class="text-center">
+     <h3>就业困难</h3>
+    </div> 
+    <div class="col-lg-12"> 
+     <div class="col-lg-2"></div> 
+     <div class="col-lg-8"> 
+      <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p> 
+     </div> 
+    </div> 
+    <div class="text-center">
+     <h4>2013-2019年城市月度空气质量情况</h4>
+     <h5>AQI指标</h5>
+    </div> 
+    <div class="row"> 
+     <div class="col-lg-12"> 
+      <div class="col-lg-2"></div> 
+      <div class="col-lg-8"> 
+       <div id="part3-content1_graph1" style="width: 80%px;height:500px;"></div> 
+       <script type="text/javascript">
             // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('part3-content1_graph1'));
+            var myChart7 = echarts.init(document.getElementById('part3-content1_graph1'));
     
             // 指定图表的配置项和数据
             
@@ -1514,33 +1551,38 @@
             ]
         };
             // 使用刚指定的配置项和数据显示图表。
-            myChart.setOption(option);
-        </script>
-        </div>
-        </div>
-    </div>
-</section> 
-
-<br></br>
-<section id='part3-content2'>
-    <div class="container-fluid">
-    <div class="text-center"><h3>抚养负担</h3></div>
-    <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p>
-        </div>
-    </div>
-    <div class="text-center"><h4>2013-2019年城市月度空气质量情况</h4><h5>AQI指标</h5></div>
-    <div class="row">
-        <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-        <script src="js/echarts.js"></script>
-        <div id="part3-content2_graph1" style="width: 80%px;height:500px;"></div>
-        <script type="text/javascript">
+            myChart7.setOption(option);
+        </script> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+  </section> 
+  <br />
+  <br /> 
+  <section id="part3-content2"> 
+   <div class="container-fluid"> 
+    <div class="text-center">
+     <h3>抚养负担</h3>
+    </div> 
+    <div class="col-lg-12"> 
+     <div class="col-lg-2"></div> 
+     <div class="col-lg-8"> 
+      <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p> 
+     </div> 
+    </div> 
+    <div class="text-center">
+     <h4>2013-2019年城市月度空气质量情况</h4>
+     <h5>AQI指标</h5>
+    </div> 
+    <div class="row"> 
+     <div class="col-lg-12"> 
+      <div class="col-lg-2"></div> 
+      <div class="col-lg-8"> 
+       <div id="part3-content2_graph1" style="width: 80%px;height:500px;"></div> 
+       <script type="text/javascript">
             // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('part3-content2_graph1'));
+            var myChart8 = echarts.init(document.getElementById('part3-content2_graph1'));
     
             // 指定图表的配置项和数据
             
@@ -1633,33 +1675,38 @@
             ]
         };
             // 使用刚指定的配置项和数据显示图表。
-            myChart.setOption(option);
-        </script>
-        </div>
-        </div>
-    </div>
-</section> 
-
-<br></br>
-<section id='part3-content3'>
-    <div class="container-fluid">
-    <div class="text-center"><h3>关系疏离</h3></div>
-    <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p>
-        </div>
-    </div>
-    <div class="text-center"><h4>2013-2019年城市月度空气质量情况</h4><h5>AQI指标</h5></div>
-    <div class="row">
-        <div class="col-lg-12">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-        <script src="js/echarts.js"></script>
-        <div id="part3-content3_graph1" style="width: 80%px;height:500px;"></div>
-        <script type="text/javascript">
+            myChart8.setOption(option);
+        </script> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+  </section> 
+  <br />
+  <br /> 
+  <section id="part3-content3"> 
+   <div class="container-fluid"> 
+    <div class="text-center">
+     <h3>关系疏离</h3>
+    </div> 
+    <div class="col-lg-12"> 
+     <div class="col-lg-2"></div> 
+     <div class="col-lg-8"> 
+      <p class="lead"><strong><em>空气污染，</em></strong> 又称为大气污染，按照国际标准化组织（ISO）的定义，空气污染通常是指:由于人类活动或自然过程引起某些物质进入大气中，呈现出足够的浓度，达到足够的时间，并因此危害了人类的舒适、健康和福利或环境的现象。换言之，只要是某一种物质其存在的量、性质及时间足够对人类或其他生物、财物产生影响者，我们就可以称其为空气污染物；而其存在造成的现象，就是空气污染。2017年10月27日，世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，室外空气污染在一类致癌物清单中。</p> 
+     </div> 
+    </div> 
+    <div class="text-center">
+     <h4>2013-2019年城市月度空气质量情况</h4>
+     <h5>AQI指标</h5>
+    </div> 
+    <div class="row"> 
+     <div class="col-lg-12"> 
+      <div class="col-lg-2"></div> 
+      <div class="col-lg-8"> 
+       <div id="part3-content3_graph1" style="width: 80%px;height:500px;"></div> 
+       <script type="text/javascript">
             // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('part3-content3_graph1'));
+            var myChart9 = echarts.init(document.getElementById('part3-content3_graph1'));
     
             // 指定图表的配置项和数据
             
@@ -1752,13 +1799,15 @@
             ]
         };
             // 使用刚指定的配置项和数据显示图表。
-            myChart.setOption(option);
-        </script>
-        </div>
-        </div>
-    </div>
-</section> 
- 
+            myChart9.setOption(option);
+        </script> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+  </section> 
+ </body>
+</html> 
   <section id="footer" class="footer">
   <div class="container">
       <p class="text-center">
@@ -1825,22 +1874,13 @@
 </section>
 
 
-  <!-- jQuery -->
-<script src="js/jquery.js"></script>
+  
 
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
 <script src="js/custom.js"></script> 
 
-<!-- 可视化 D3 JavaScript -->
-<script src="js/d3.js"></script>
 
-<!-- echarts JavaScript -->
-<script src="js/echarts.js"></script>
-
-  
 </body>
 
 </html>
