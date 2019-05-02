@@ -2308,30 +2308,67 @@
               <div id="part2-content3_graph1" style="width: 80%px;height:500px;"></div>
               <script type="text/javascript">// 基于准备好的dom，初始化echarts实例
                 var myChart7 = echarts.init(document.getElementById('part2-content3_graph1'));
-                option = {
-                  parallelAxis: [{
-                    dim: 0,
-                    name: '城市',
-                    type: 'category',
-                    data: ['北京', '上海', '广州', '深圳', '成都', '重庆']
-                  },
-                  {
-                    dim: 1,
-                    name: '环境噪声',
-                    min: 52
-                  },
-                  {
-                    dim: 2,
-                    name: '道路噪声',
-                    min: 66
-                  }
+                
+var data = [
+    [53.2, 69.3],
+    [55.7, 69.9],
+    [55.3, 69],
+    [57.5, 70],
+    [54.3, 69.3],
+    [53.1, 66.7]
+];
+var cities = ['北京', '上海', '深圳', '广州', '苏州', '杭州']
 
-                  ],
-                  series: {
-                    type: 'parallel',
-                    data: [['北京', 53.2, 69.3], ['上海', 55.7, 69.9], ['广州', 55.3, 69], ['深圳', 57.5, 70], ['成都', 54.3, 69.3], ['重庆', 53.1, 66.7]]
-                  }
-                };
+option = {
+    
+    angleAxis: {
+        type: 'category',
+        data: cities,
+    axisLabel: { //刻度标签设置
+　　　　
+　　　　textStyle: {
+　　　　　　
+　　　　　　fontSize:16,
+　　　　}
+    }
+　　
+　　},
+
+    tooltip: {
+        show: true,
+        formatter: function (params) {
+            var id = params.dataIndex;
+            return cities[id] + '<br>环境噪声:' + data[id][0] + 'db(A)<br>道路噪声:' + data[id][1]+'db(A)';
+        }
+    },
+    radiusAxis: {
+        show:false,
+       min:0,
+        max:75
+    },
+    polar: {
+     
+    },
+    series: [
+        
+        {
+        type: 'bar',
+        
+        data: data.map(function (d) {
+            return d[0];
+        }),
+        coordinateSystem: 'polar',
+        name: 'ddd'
+    }, {
+        type: 'bar',
+        data: data.map(function (d) {
+            return d[1];
+        }),
+        
+        coordinateSystem: 'polar',
+        name: '价格范围'
+    }]
+};
                 myChart7.setOption(option);</script>
             </div>
           </div>
