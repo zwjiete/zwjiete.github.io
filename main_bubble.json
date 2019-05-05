@@ -3,8 +3,7 @@
 "children":[
     {"name": "土地占有","address":"#part1-content1", "note":"城市人口密度"},
     {"name": "水资源","address":"#part1-content2","note":"北京人均水资源"},
-    {"name":"教育资源","address":"#part1-content3","note":"师生比北京比较 小学，中学"},
-    {"name":"交通拥堵","address":"#part1-content4","note":"其他媒体 北京交通情况，北京地铁图，死亡率"}
+    {"name":"交通拥堵","address":"#part1-content3","note":"其他媒体 北京交通情况，北京地铁图，死亡率"}
 ]},
 {"name": "生态环境污染", "address":"#part2-title",
 "children":[
@@ -15,7 +14,7 @@
 {"name":"居民生活困难", "address":"#part3-title",
 "children":[
     {"name":"就业困难","address":"#part3-content1","note":"失业率"},
-    {"name":"抚养负担","address":"#part3-content2","note":"少年儿童抚养比 老年儿童抚养比 总抚养比"},
+    {"name":"教育资源","address":"#part3-content2","note":"师生比北京比较 小学，中学"},
     {"name":"关系疏离","address":"#part3-content3","note":"粗离婚率,刑事案件"}
 ]}
 ]}
