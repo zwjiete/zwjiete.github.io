@@ -64,7 +64,7 @@
       <a href="#part1-title" onclick = $("#menu-close").click(); >公共资源</a>
     </li>
     <li>
-      <a href="#part2-title" onclick = $("#menu-close").click(); >环境污染</a>
+      <a href="#part2-title" onclick = $("#menu-close").click(); >生态环境</a>
     </li>
     <li>
       <a href="#part3-title" onclick = $("#menu-close").click(); >居民生活</a>
@@ -1902,8 +1902,7 @@
           '武汉': [114.31, 30.52],
           '大庆': [125.03, 46.58]
         };
-
-        var convertData = function(data) {
+var convertData = function(data) {
           var res = [];
           for (var i = 0; i < data.length; i++) {
             var geoCoord = geoCoordMap[data[i].name];
@@ -1913,6 +1912,73 @@
                 value: geoCoord.concat(data[i].value)
               });
             }
+          }
+          return res;
+        };
+        var chooseData = function(data) {
+          var res = [];
+          for (var i = 0; i < data.length; i++){
+              if (data[i].name='重庆')
+              {
+                var geoCoord = geoCoordMap[data[i].name];
+                if (geoCoord) {
+                res.push({
+                    name: data[i].name,
+                    value: geoCoord.concat(data[i].value)
+                 });
+                 }
+              }
+              if (data[i].name='上海')
+              {
+                var geoCoord = geoCoordMap[data[i].name];
+                if (geoCoord) {
+                res.push({
+                    name: data[i].name,
+                    value: geoCoord.concat(data[i].value)
+                 });
+                 }
+              }
+              if (data[i].name='北京')
+              {
+                var geoCoord = geoCoordMap[data[i].name];
+                if (geoCoord) {
+                res.push({
+                    name: data[i].name,
+                    value: geoCoord.concat(data[i].value)
+                 });
+                 }
+              }
+              if (data[i].name='天津')
+              {
+                var geoCoord = geoCoordMap[data[i].name];
+                if (geoCoord) {
+                res.push({
+                    name: data[i].name,
+                    value: geoCoord.concat(data[i].value)
+                 });
+                 }
+              }
+              if (data[i].name='广州')
+              {
+                var geoCoord = geoCoordMap[data[i].name];
+                if (geoCoord) {
+                res.push({
+                    name: data[i].name,
+                    value: geoCoord.concat(data[i].value)
+                 });
+                 }
+              }
+              if (data[i].name='深圳')
+              {
+                var geoCoord = geoCoordMap[data[i].name];
+                if (geoCoord) {
+                res.push({
+                    name: data[i].name,
+                    value: geoCoord.concat(data[i].value)
+                 });
+                 }
+              }
+              
           }
           return res;
         };
@@ -2065,12 +2131,12 @@
             }
           },
           {
-            name: 'Top 5',
+            name: '巨型城市',
             type: 'effectScatter',
             coordinateSystem: 'bmap',
-            data: convertData(data.sort(function(a, b) {
+            data: chooseData(data.sort(function(a, b) {
               return b.value - a.value;
-            }).slice(0, 6)),
+            }).slice(0, 1)),
             symbolSize: function(val) {
               return val[2] / 10;
             },
@@ -2088,7 +2154,7 @@
             },
             itemStyle: {
               normal: {
-                color: '#666',
+                color: 'purple',
                 shadowBlur: 10,
                 shadowColor: '#444'
               }
@@ -2498,6 +2564,13 @@
                 };
 
                 option = {
+                  title: {
+        left: '28%',
+        text: '点击可切换城市→',
+        textStyle:{
+          fontSize:12,
+        },
+    },
                   tooltip: {},
                   legend: {
                     data: ['天津', '北京', '上海'],
@@ -2866,7 +2939,7 @@
           <br></br>最后，我们采访了来自不同城市的三个年轻人对于城市病的感受，一起来听听她们怎么说吧！</p>
           <br></br>
           <div class="embed-responsive embed-responsive-16by9">
-          <iframe height=498 width=510 src='http://player.youku.com/embed/XNDE3MzE1Nzc2NA==' frameborder=0 'allowfullscreen'></iframe>
+          <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=w0868pc4h74" allowFullScreen="true"></iframe>
         </div>
           <p class="lead"><br></br>人们仍然是热爱大城市的，但是城市的病态也依旧困扰着每个人的生活。当然我们相信，随着政府的重视和人们意识的觉醒，巨型城市这些病症一定能够慢慢减轻，还我们一个优秀又美好的家园！
           <br></br></p>
