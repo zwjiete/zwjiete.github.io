@@ -1,13 +1,4 @@
-# 数据新闻作品——城市病
-# Data Journalism
+# 数据新闻作品——巴以冲突：对俄乌冲突的潜在影响
 
-使用了Jekyll 中的 [Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/) template by [Start Bootstrap](http://startbootstrap.com/).
-
-based on Jekyll tool.
-
-数据来源为：[国家统计局](http://data.stats.gov.cn) 
-
-data source: http://data.stats.gov.cn
-
-To Be Continue（待完成）
-
+组长：梁志威
+组员：钱坤、凌亦宁、陈百晓、罗嗣哲
